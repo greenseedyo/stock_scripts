@@ -9,7 +9,7 @@ from elasticsearch import Elasticsearch
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
-class Dumpper:
+class Retriever:
     line_pool = {}
     index_name = 'tsec'
     data_dir = '/Volumes/Backup Plus/stock/tsec/data'
@@ -74,6 +74,26 @@ class Dumpper:
             if previous_line_number < 1:
                 break
             line = self.get_line_by_number(stock_code, previous_line_number)
+            data_dict = self.get_line_data_dict(line)
+            try:
+                float(data_dict['opening_price'])
+            except ValueError:
+                continue
+            lines.append(line)
+            counter += 1
+        return lines
+
+    def get_next_valid_lines(self, stock_code, line_number, max_size):
+        # get from pool if it has
+        lines = []
+        counter = 0
+        i = 0
+        while counter < max_size:
+            i += 1
+            next_line_number = line_number + i
+            line = self.get_line_by_number(stock_code, next_line_number)
+            if line is None:
+                break
             data_dict = self.get_line_data_dict(line)
             try:
                 float(data_dict['opening_price'])
@@ -211,6 +231,32 @@ class Dumpper:
                 line_number = i + 1
                 self.save_line(stock_code, line_number, line)
                 return line_number
+
+    def simulate_rule_1(self, stock_code, start_date, max_days):
+        data_set = []
+        line_number = self.search_line_number_by_date(stock_code, start_date)
+        lines = self.get_next_valid_lines(stock_code, line_number, max_days)
+        # 移動停損點法，停損點設定
+        stop_loss_factor = 0.9
+        highest_price = 0
+        for i, line in enumerate(lines):
+            data_dict = self.get_line_data_dict(line)
+            # 第一天開盤價進場
+            if 0 == i:
+                buy_in_price = float(data_dict['opening_price'])
+                data = [start_date, buy_in_price, int(buy_in_price * 1000), '0%']
+                data_set.append(data)
+            if float(data_dict['highest_price']) > highest_price:
+                highest_price = float(data_dict['highest_price'])
+            closing_price = float(data_dict['closing_price'])
+            current_line_number = i + 1
+            return_rate = round((closing_price - buy_in_price) / buy_in_price * 100, 2)
+            data = [data_dict['date'], closing_price, int(closing_price * 1000), '{}%'.format(return_rate)]
+            data_set.append(data)
+            # 是否跌破停損點
+            if closing_price < highest_price * stop_loss_factor:
+                break
+        return data_set
 
 
     def dump_to_es(self):
