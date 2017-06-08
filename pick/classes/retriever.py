@@ -153,7 +153,7 @@ class Retriever:
         }
         return dict
 
-    def break_consolidation_area(self, stock_code, line_number, period, threshold = 0.08):
+    def break_consolidation_area(self, stock_code, line_number, period = 5, threshold = 0.08):
         peroid_highest = 0
         peroid_lowest = 10000
         previous_valid_lines = self.get_previous_valid_lines(stock_code, line_number, period)
@@ -182,7 +182,7 @@ class Retriever:
     # 條件一：
     # (1) 成交量大於 1000，並超過 5 日均量的 2 倍
     # (2) 股價大於 12 元
-    # (3) 漲幅超過 3%
+    # (3) 漲半支停板以上
     # (4) 突破盤整區
     def check_condition_1(self, stock_code, line_number):
         line = self.get_line_by_number(stock_code, line_number)
@@ -220,7 +220,7 @@ class Retriever:
             return False
 
         # 是否突破盤整區
-        if not self.break_consolidation_area(stock_code, line_number, 5):
+        if not self.break_consolidation_area(stock_code, line_number, 10):
             return False
 
         return True
@@ -235,9 +235,15 @@ class Retriever:
                 self.save_line(stock_code, line_number, line)
                 return line_number
 
-    def simulate_rule_1(self, stock_code, start_date, max_days):
-        data_set = []
+    def get_simulation_1_info(self, stock_code, start_date, max_days):
+        info = {
+            'start_date': start_date,
+            'buy_in_price': 0,
+            'data_set': []
+        }
         line_number = self.search_line_number_by_date(stock_code, start_date)
+        if line_number is None:
+            raise Exception('找不到 {} 的資料'.format(start_date))
         lines = self.get_next_valid_lines(stock_code, line_number, max_days)
         # 移動停損點法，停損點設定
         stop_loss_factor = 0.9
@@ -247,19 +253,18 @@ class Retriever:
             # 第一天開盤價進場
             if 0 == i:
                 buy_in_price = float(data_dict['opening_price'])
-                data = [start_date, buy_in_price, int(buy_in_price * 1000), '0%']
-                data_set.append(data)
+                info['buy_in_price']= buy_in_price
             if float(data_dict['highest_price']) > highest_price:
                 highest_price = float(data_dict['highest_price'])
             closing_price = float(data_dict['closing_price'])
             current_line_number = i + 1
-            return_rate = round((closing_price - buy_in_price) / buy_in_price * 100, 2)
-            data = [data_dict['date'], closing_price, int(closing_price * 1000), '{}%'.format(return_rate)]
-            data_set.append(data)
+            roi = round((closing_price - buy_in_price) / buy_in_price, 4)
+            data = [data_dict['date'], closing_price, roi]
+            info['data_set'].append(data)
             # 是否跌破停損點
             if closing_price < highest_price * stop_loss_factor:
                 break
-        return data_set
+        return info
 
 
     def dump_to_es(self):

@@ -34,7 +34,7 @@ class TestRetriever(unittest.TestCase):
             continue
         self.assertEqual(stock_code, '1212')
         self.assertEqual(line_number, 329)
-        self.assertEqual(line, '94/06/03,254000,53340,0.21,0.21,0.21,0.21,-0.01,9\r\n')
+        self.assertEqual(line, '94/06/03,254000,53340,0.21,0.21,0.21,0.21,-0.01,9\n')
 
     def test_save_line(self):
         stock_code = 'xxxx'
@@ -171,20 +171,25 @@ class TestRetriever(unittest.TestCase):
         self.assertDictEqual(data_dict, assert_dict)
 
     def test_break_consolidation_area(self):
-        # 不滿足此條件的
+        # 不滿足預設參數條件
         stock_code = '1204'
         line_number = 20
-        check = self.retriever.break_consolidation_area(stock_code, line_number, 5)
+        check = self.retriever.break_consolidation_area(stock_code, line_number)
         self.assertFalse(check)
-        # 不滿足此條件的
+        # 不滿足自訂參數條件
         stock_code = '4102'
-        line_number = 16
-        check = self.retriever.break_consolidation_area(stock_code, line_number, 10, 0.06)
+        line_number = 44
+        check = self.retriever.break_consolidation_area(stock_code, line_number, 10, 0.05)
         self.assertFalse(check)
-        # 滿足此條件的
-        stock_code = '4102'
-        line_number = 16
-        check = self.retriever.break_consolidation_area(stock_code, line_number, 5)
+        # 滿足預設參數條件
+        stock_code = '1204'
+        line_number = 44
+        check = self.retriever.break_consolidation_area(stock_code, line_number)
+        self.assertTrue(check)
+        # 滿足自訂參數條件
+        stock_code = '1204'
+        line_number = 216
+        check = self.retriever.break_consolidation_area(stock_code, line_number, 10, 0.09)
         self.assertTrue(check)
 
     def test_check_condition_1(self):
@@ -194,8 +199,8 @@ class TestRetriever(unittest.TestCase):
         check = self.retriever.check_condition_1(stock_code, line_number)
         self.assertFalse(check)
         # 滿足此條件的
-        stock_code = '4102'
-        line_number = 16
+        stock_code = '1204'
+        line_number = 229
         check = self.retriever.check_condition_1(stock_code, line_number)
         self.assertTrue(check)
 
@@ -205,14 +210,17 @@ class TestRetriever(unittest.TestCase):
         line_number = self.retriever.search_line_number_by_date(stock_code, date)
         self.assertEqual(line_number, 373)
 
-    def test_simulate_rule_1(self):
+    def test_get_simulation_1_info(self):
         stock_code = '1204'
         date = '94/02/24'
-        data_set = self.retriever.simulate_rule_1(stock_code, date, 10)
+        info = self.retriever.get_simulation_1_info(stock_code, date, 10)
+        data_set = info['data_set']
         return_rate = ''
-        for date, price, value, return_rate in data_set:
+        for date, price, return_rate in data_set:
             continue
-        self.assertEqual(return_rate, '-6.28%')
+        self.assertEqual(info['start_date'], '94/02/24')
+        self.assertEqual(info['buy_in_price'], 3.98)
+        self.assertEqual(return_rate, -0.0628)
 
 if __name__ == '__main__':
     unittest.main()
