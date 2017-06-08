@@ -162,10 +162,12 @@ class Retriever:
         for previous_line in previous_valid_lines:
             data_dict = self.get_line_data_dict(previous_line)
             try:
-                if float(data_dict['highest_price']) > peroid_highest:
-                    peroid_highest = float(data_dict['highest_price'])
-                if float(data_dict['lowest_price']) < peroid_lowest:
-                    peroid_lowest = float(data_dict['lowest_price'])
+                highest_price = float(data_dict['highest_price'])
+                lowest_price = float(data_dict['lowest_price'])
+                if highest_price > peroid_highest:
+                    peroid_highest = highest_price
+                if lowest_price < peroid_lowest:
+                    peroid_lowest = lowest_price
             except ValueError:
                 continue
         peroid_difference = peroid_highest - peroid_lowest
@@ -222,6 +224,7 @@ class Retriever:
             return False
 
         return True
+
 
     def search_line_number_by_date(self, stock_code, date):
         filename = self.get_filename_by_stock_code(stock_code)

@@ -31,6 +31,11 @@ def pick(date):
 
     return winners
 
+def test_one(stock_code, date):
+    retriever = Retriever()
+    line_number = retriever.search_line_number_by_date(stock_code, date)
+    check = retriever.check_condition_1(stock_code, line_number)
+
 def simulate(stock_codes, date):
     retriever = Retriever()
     for stock_code in stock_codes:
@@ -41,7 +46,7 @@ def simulate(stock_codes, date):
         break
 
 def main():
-    date = '101/06/08'
+    date = '106/06/07'
     winners = pick(date)
     #simulate(winners, date)
 
