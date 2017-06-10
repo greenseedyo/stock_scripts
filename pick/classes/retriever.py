@@ -12,7 +12,8 @@ sys.setdefaultencoding('utf8')
 class Retriever:
     line_pool = {}
     index_name = 'tsec'
-    data_dir = '/Volumes/Backup Plus/stock/tsec/data'
+    #data_dir = '/Volumes/Backup Plus/stock/tsec/data'
+    data_dir = '/Users/yo/stock/data'
 
     def __init__(self, stock_codes = []):
         self.es = Elasticsearch(timeout=30)
@@ -235,7 +236,7 @@ class Retriever:
                 self.save_line(stock_code, line_number, line)
                 return line_number
 
-    def get_simulation_1_info(self, stock_code, start_date, max_days):
+    def get_simulation_1_info(self, stock_code, start_date, max_days = 30):
         info = {
             'start_date': start_date,
             'buy_in_price': 0,
