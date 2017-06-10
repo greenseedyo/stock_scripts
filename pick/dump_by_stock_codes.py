@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import argparse
-from classes.dumpper import Dumpper
+from classes.retriever import Retriever
 
 def main():
     parser = argparse.ArgumentParser()
@@ -11,9 +11,9 @@ def main():
     stock_codes = args.stock_codes
 
     #print(stock_codes)
-    dumpper = Dumpper(stock_codes)
-    dumpper.put_mapping_by_stock_codes()
-    dumpper.dump()
+    retriever = Retriever(stock_codes)
+    retriever.put_mapping_by_stock_codes()
+    retriever.dump_to_es()
 
 if __name__ == '__main__': main()
 
