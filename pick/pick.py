@@ -138,16 +138,16 @@ def simulate(stock_codes, pick_date_obj, max_days, stop_loss_factor):
 
 def main():
     # 模擬開始日
-    from_date = '2017/03/01'
+    from_date = '2014/04/01'
     # 模擬進場次數
     day_count = 20
     # 單支股票持股交易日上限
-    max_days = 100
+    max_days = 90
     # 停損設定
     stop_loss_factor = 0.90
     # 選股設定 - model_1
-    min_volume = 1 * 1000
-    max_volume = 500 * 1000
+    min_volume = 1000 * 1000
+    max_volume = None  # 500 * 1000
     min_price = 12
     max_price = 100
     min_change_percent = 0.03
