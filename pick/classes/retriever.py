@@ -6,7 +6,7 @@ import sys
 import os.path
 from elasticsearch import Elasticsearch
 
-reload(sys)  
+reload(sys)
 sys.setdefaultencoding('utf8')
 
 class Retriever:
@@ -136,7 +136,7 @@ class Retriever:
         difference = self.get_difference(stock_code, line_number)
         if difference is None:
             return None
-        change_percent = difference / previous_closing_price 
+        change_percent = difference / previous_closing_price
         return change_percent
 
     def get_line_data_dict(self, line):
@@ -237,7 +237,6 @@ class Retriever:
 
         return True
 
-
     def search_line_number_by_date(self, stock_code, date):
         filename = self.get_filename_by_stock_code(stock_code)
         for i, line_raw in enumerate(open(filename)):
@@ -247,7 +246,9 @@ class Retriever:
                 self.save_line(stock_code, line_number, line)
                 return line_number
 
-    def get_simulation_1_info(self, stock_code, pick_date, max_days = 30, stop_loss_factor = 0.9):
+    def get_simulation_1_info(self,
+                              stock_code, pick_date,
+                              max_days=30, stop_loss_factor=0.9):
         info = {
             'pick_date': pick_date,
             'buy_in_price': 0,
@@ -265,11 +266,10 @@ class Retriever:
             # 第一天開盤價進場
             if 0 == i:
                 buy_in_price = float(data_dict['opening_price'])
-                info['buy_in_price']= buy_in_price
+                info['buy_in_price'] = buy_in_price
             if float(data_dict['highest_price']) > highest_price:
                 highest_price = float(data_dict['highest_price'])
             closing_price = float(data_dict['closing_price'])
-            current_line_number = i + 1
             roi = round((closing_price - buy_in_price) / buy_in_price, 4)
             data = [data_dict['date'], closing_price, roi]
             info['data_set'].append(data)
