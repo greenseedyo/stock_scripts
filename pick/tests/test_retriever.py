@@ -3,7 +3,7 @@
 
 import sys
 import unittest
-from classes.retriever import Retriever
+from classes.retriever import *
 
 class TestRetriever(unittest.TestCase):
     def setUp(self):
@@ -20,7 +20,7 @@ class TestRetriever(unittest.TestCase):
     def test_readfiles_by_stock_codes(self):
         # xxxx.csv 不存在，要噴 Exception
         stock_codes = ['0050', 'xxxx']
-        with self.assertRaises(Exception):
+        with self.assertRaises(RetrieverException):
             data = self.retriever.readfiles_by_stock_codes(stock_codes)
             for stock_code, line_number, line in data:
                 break
@@ -100,7 +100,7 @@ class TestRetriever(unittest.TestCase):
         # 沒有之前的資料
         stock_code = '1204'
         line_number = 1
-        with self.assertRaises(Exception) as cm:
+        with self.assertRaises(RetrieverException) as cm:
             previous_closing_price = self.retriever.get_previous_valid_closing_price(stock_code, line_number)
         the_exception = cm.exception
         self.assertEqual(str(the_exception), 'no previous line')
@@ -201,8 +201,15 @@ class TestRetriever(unittest.TestCase):
         # 滿足此條件的
         stock_code = '1204'
         line_number = 229
-        check = self.retriever.check_condition_1(stock_code, line_number)
+        check = self.retriever.check_condition_1(stock_code, line_number, min_price = 4)
         self.assertTrue(check)
+        # 暫停交易的
+        stock_code = '1204'
+        line_number = 261
+        with self.assertRaises(RetrieverException) as cm:
+            check = self.retriever.check_condition_1(stock_code, line_number)
+        the_exception = cm.exception
+        self.assertEqual(str(the_exception), 'no data')
 
     def test_search_line_by_date(self):
         stock_code = '1204'

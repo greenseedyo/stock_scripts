@@ -30,7 +30,7 @@ class Retriever:
         for stock_code in stock_codes:
             filename = self.get_filename_by_stock_code(stock_code)
             if not os.path.isfile(filename):
-                raise Exception('{} is not a file'.format(filename))
+                raise RetrieverException('{} is not a file'.format(filename))
         for stock_code in stock_codes:
             line_number = 0
             for line_raw in open(filename):
@@ -108,7 +108,7 @@ class Retriever:
         previous_closing_price = 0
         previous_lines = self.get_previous_valid_lines(stock_code, line_number, 1)
         if len(previous_lines) < 1:
-            raise Exception('no previous line')
+            raise RetrieverException('no previous line')
         previous_data_dict = self.get_line_data_dict(previous_lines[0])
         previous_closing_price = float(previous_data_dict['closing_price'])
         return previous_closing_price
@@ -116,7 +116,7 @@ class Retriever:
     def get_difference(self, stock_code, line_number):
         try:
             previous_closing_price = self.get_previous_valid_closing_price(stock_code, line_number)
-        except Exception:
+        except RetrieverException:
             return None
         line = self.get_line_by_number(stock_code, line_number)
         try:
@@ -129,7 +129,7 @@ class Retriever:
     def get_change_percent(self, stock_code, line_number):
         try:
             previous_closing_price = self.get_previous_valid_closing_price(stock_code, line_number)
-        except Exception:
+        except RetrieverException:
             return None
         if 0 == previous_closing_price:
             return None
@@ -182,25 +182,36 @@ class Retriever:
 
     # 條件一：
     # (1) 成交量大於 1000，並超過 5 日均量的 2 倍
-    # (2) 股價大於 12 元
+    # (2) 股價設定區間
     # (3) 漲半支停板以上
     # (4) 突破盤整區
-    def check_condition_1(self, stock_code, line_number):
+    def check_condition_1(self, stock_code, line_number, **kwargs):
+        # 條件設定
+        threshold_min_volume = kwargs.pop('min_volume', 1000)
+        threshold_min_price = kwargs.pop('min_price', 20)
+        threshold_max_price = kwargs.pop('max_price', 50)
+        threshold_min_change_percent = kwargs.pop('min_chagne_percent', 0.03)
+
         line = self.get_line_by_number(stock_code, line_number)
         data_dict = self.get_line_data_dict(line)
-        volume = data_dict['volume']
-        closing_price = data_dict['closing_price']
-        # 成交量門檻 1000
-        if volume < 1000:
+        volume = int(data_dict['volume'])
+        try:
+            closing_price = float(data_dict['closing_price'])
+        except ValueError:
+            raise RetrieverException('no data')
+        # 成交量門檻
+        if volume < threshold_min_volume:
             return False
         # 股價門檻
-        if closing_price < 12:
+        if closing_price < threshold_min_price:
             return False
-        # 漲幅是否超過 3%
+        if closing_price > threshold_max_price:
+            return False
+        # 漲幅是否門檻
         change_percent = self.get_change_percent(stock_code, line_number)
         if not isinstance(change_percent, float):
             return False
-        if change_percent < 0.03:
+        if change_percent < threshold_min_change_percent:
             return False
         # 是否有過去 5 天的資料
         check = self.check_has_previous_data(line_number, 5)
@@ -236,15 +247,16 @@ class Retriever:
                 self.save_line(stock_code, line_number, line)
                 return line_number
 
-    def get_simulation_1_info(self, stock_code, start_date, max_days = 30):
+    def get_simulation_1_info(self, stock_code, pick_date, max_days = 30):
         info = {
-            'start_date': start_date,
+            'pick_date': pick_date,
             'buy_in_price': 0,
             'data_set': []
         }
-        line_number = self.search_line_number_by_date(stock_code, start_date)
+        line_number = self.search_line_number_by_date(stock_code, pick_date)
         if line_number is None:
-            raise Exception('找不到 {} 的資料'.format(start_date))
+            raise RetrieverException('找不到 {} 的資料'.format(pick_date))
+        # 抓選股日之後的資料 (選股日不算)
         lines = self.get_next_valid_lines(stock_code, line_number, max_days)
         # 移動停損點法，停損點設定
         stop_loss_factor = 0.9
@@ -390,3 +402,6 @@ class Retriever:
             #print("putting mapping of '%s' ..." % (doc_type))
             res = self.es.indices.put_mapping(index = self.index_name, doc_type = doc_type, body = request_body)
             #print(" response: '%s'" % (res))
+
+class RetrieverException(Exception):
+    pass
