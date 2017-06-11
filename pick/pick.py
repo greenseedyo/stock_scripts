@@ -40,7 +40,7 @@ def test_one(stock_code, date):
     line_number = retriever.search_line_number_by_date(stock_code, date)
     check = retriever.check_condition_1(stock_code, line_number)
 
-def simulate(stock_codes, pick_date_tw, max_days):
+def simulate(stock_codes, pick_date_tw, max_days, stop_loss_factor):
     retriever = Retriever()
     total_cost = 0
     total_revenue = 0
@@ -57,7 +57,7 @@ def simulate(stock_codes, pick_date_tw, max_days):
     end_date_tw = ''
     max_through_days = 0
     for stock_code in stock_codes:
-        info = retriever.get_simulation_1_info(stock_code, pick_date_tw, max_days)
+        info = retriever.get_simulation_1_info(stock_code, pick_date_tw, max_days, stop_loss_factor)
         cost = info['buy_in_price'] * 1000 * buy_in_unit
         total_cost += cost
         #print('股票編號: {}'.format(stock_code))
@@ -119,11 +119,13 @@ def simulate(stock_codes, pick_date_tw, max_days):
 
 def main():
     # 模擬開始日
-    from_date_tw = '105/04/01'
+    from_date_tw = '105/08/01'
     # 模擬進場次數
-    day_count = 60
+    day_count = 20
     # 單支股票持股交易日上限
     max_days = 30
+    # 停損設定
+    stop_loss_factor = 0.90
 
     from_date = '{}/{}/{}'.format(int(from_date_tw.split('/')[0]) + 1911, from_date_tw.split('/')[1], from_date_tw.split('/')[2])
     from_date_obj = datetime.datetime.strptime(from_date, "%Y/%m/%d")
@@ -144,7 +146,7 @@ def main():
         if 0 == len(winners):
             continue
         try:
-            result = simulate(winners, pick_date_tw, max_days)
+            result = simulate(winners, pick_date_tw, max_days, stop_loss_factor)
             roi = result['roi']
             net = result['net']
             cost = result['cost']

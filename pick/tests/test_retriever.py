@@ -225,7 +225,7 @@ class TestRetriever(unittest.TestCase):
         return_rate = ''
         for date, price, return_rate in data_set:
             continue
-        self.assertEqual(info['start_date'], '94/02/24')
+        self.assertEqual(info['pick_date'], '94/02/24')
         self.assertEqual(info['buy_in_price'], 3.98)
         self.assertEqual(return_rate, -0.0628)
 

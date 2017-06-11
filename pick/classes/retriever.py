@@ -247,7 +247,7 @@ class Retriever:
                 self.save_line(stock_code, line_number, line)
                 return line_number
 
-    def get_simulation_1_info(self, stock_code, pick_date, max_days = 30):
+    def get_simulation_1_info(self, stock_code, pick_date, max_days = 30, stop_loss_factor = 0.9):
         info = {
             'pick_date': pick_date,
             'buy_in_price': 0,
@@ -259,7 +259,6 @@ class Retriever:
         # 抓選股日之後的資料 (選股日不算)
         lines = self.get_next_valid_lines(stock_code, line_number, max_days)
         # 移動停損點法，停損點設定
-        stop_loss_factor = 0.9
         highest_price = 0
         for i, line in enumerate(lines):
             data_dict = self.get_line_data_dict(line)
