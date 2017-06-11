@@ -3,7 +3,8 @@
 
 import sys
 import unittest
-from classes.retriever import *
+from classes.retriever import Retriever, RetrieverException
+
 
 class TestRetriever(unittest.TestCase):
     def setUp(self):
@@ -25,7 +26,7 @@ class TestRetriever(unittest.TestCase):
             for stock_code, line_number, line in data:
                 break
         # 檔案存在
-        stock_codes = ['1204', '1212'] # 1204, 1212 已下市不會再有新的資料
+        stock_codes = ['1204', '1212']  # 1204, 1212 已下市不會再有新的資料
         data = self.retriever.readfiles_by_stock_codes(stock_codes)
         stock_code = ''
         line_number = 0
@@ -61,7 +62,7 @@ class TestRetriever(unittest.TestCase):
         self.assertFalse(check, msg="3rd line shouldn't have 3 previous lines")
 
     def test_get_line_by_number(self):
-        stock_code = '1204' # 1204 已下市不會再有新的資料
+        stock_code = '1204'  # 1204 已下市不會再有新的資料
         line_number = 373
         line = self.retriever.get_line_by_number(stock_code, line_number)
         self.assertRegexpMatches(line, '94/09/09,0,0,--,--,--,--,,0')
@@ -101,7 +102,7 @@ class TestRetriever(unittest.TestCase):
         stock_code = '1204'
         line_number = 1
         with self.assertRaises(RetrieverException) as cm:
-            previous_closing_price = self.retriever.get_previous_valid_closing_price(stock_code, line_number)
+            self.retriever.get_previous_valid_closing_price(stock_code, line_number)
         the_exception = cm.exception
         self.assertEqual(str(the_exception), 'no previous line')
 

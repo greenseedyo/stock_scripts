@@ -9,13 +9,14 @@ from elasticsearch import Elasticsearch
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+
 class Retriever:
     line_pool = {}
     index_name = 'tsec'
-    #data_dir = '/Volumes/Backup Plus/stock/tsec/data'
+    # data_dir = '/Volumes/Backup Plus/stock/tsec/data'
     data_dir = '/Users/yo/stock/data'
 
-    def __init__(self, stock_codes = []):
+    def __init__(self, stock_codes=[]):
         self.es = Elasticsearch(timeout=30)
         self.stock_codes = stock_codes
 
@@ -154,7 +155,7 @@ class Retriever:
         }
         return dict
 
-    def break_consolidation_area(self, stock_code, line_number, period = 5, threshold = 0.08):
+    def break_consolidation_area(self, stock_code, line_number, period=5, threshold=0.08):
         peroid_highest = 0
         peroid_lowest = 10000
         previous_valid_lines = self.get_previous_valid_lines(stock_code, line_number, period)
@@ -284,7 +285,6 @@ class Retriever:
                 break
         return info
 
-
     def dump_to_es(self):
         bulk_size = 1000
         counter = 0
@@ -298,14 +298,14 @@ class Retriever:
             day = data_dict['date'].split('/')[2]
             date_str = '{}-{}-{}'.format(year, month, day)
             date_id = '{}{}{}'.format(year, month, day)
-            volume = int(data_dict['volume']) # 成交量
+            volume = int(data_dict['volume'])  # 成交量
             try:
                 opening_price = float(data_dict['opening_price'])
                 highest_price = float(data_dict['highest_price'])
                 lowest_price = float(data_dict['lowest_price'])
                 closing_price = float(data_dict['closing_price'])
                 difference = self.get_difference(stock_code, line_number)
-                condition_1 = self.check_model_1(stock_code, line_number)
+                check_model_1 = self.check_model_1(stock_code, line_number)
             except ValueError:
                 continue
 
@@ -320,7 +320,7 @@ class Retriever:
                 "收盤價": closing_price,
                 "漲跌價差": difference,
                 "成交筆數": data_dict['transactions'],
-                "自訂條件1": '是' if condition_1 else '否',
+                "自訂條件1": '是' if check_model_1 else '否',
             }
 
             querys.append({
@@ -341,8 +341,8 @@ class Retriever:
             self.bulk_to_es(querys)
 
     def bulk_to_es(self, request_body):
-        res = self.es.bulk(index = self.index_name, body = request_body)
-        #print(" response: '%s'" % (res))
+        res = self.es.bulk(index=self.index_name, body=request_body)
+        print(" response: '%s'" % (res))
 
     def put_mapping_by_stock_codes(self):
         # put mappings
@@ -404,9 +404,12 @@ class Retriever:
                 }
             }
             doc_type = stock_code
-            #print("putting mapping of '%s' ..." % (doc_type))
-            res = self.es.indices.put_mapping(index = self.index_name, doc_type = doc_type, body = request_body)
-            #print(" response: '%s'" % (res))
+            print("putting mapping of '%s' ..." % (doc_type))
+            res = self.es.indices.put_mapping(index=self.index_name,
+                                              doc_type=doc_type,
+                                              body=request_body)
+            print(" response: '%s'" % (res))
+
 
 class RetrieverException(Exception):
     pass

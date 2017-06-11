@@ -7,7 +7,6 @@ from os.path import join
 import re
 import sys
 import datetime
-import csv
 from classes.retriever import Retriever, RetrieverException
 from classes.roc_date_converter import RocDateConverter
 
@@ -114,9 +113,11 @@ def simulate(stock_codes, pick_date_obj, max_days, stop_loss_factor):
     net = total_revenue - total_cost
     formatted_net = '{:,.0f}'.format(net)
     pick_date = pick_date_obj.strftime("%Y/%m/%d")
-    print('選股日期 {}, 開始日期 {}, 結束日期 {}, 停損 {}/{}'.format(pick_date, start_date_tw, end_date_tw, stop_loss_count, len(stock_codes)))
+    print('選股日期 {}, 開始日期 {}, 結束日期 {}, 停損 {}/{}'
+          .format(pick_date, start_date_tw, end_date_tw, stop_loss_count, len(stock_codes)))
     # print(summary)
-    print('總成本: {}, 利潤: {}, 投報率: {}\n'.format(formatted_cost, formatted_net, formatted_roi))
+    print('總成本: {}, 利潤: {}, 投報率: {}\n'
+          .format(formatted_cost, formatted_net, formatted_roi))
     result = {
         'roi': total_roi,
         'cost': total_cost,
@@ -140,7 +141,7 @@ def main():
     # 模擬開始日
     from_date = '2014/04/01'
     # 模擬進場次數
-    day_count = 20
+    day_count = 100
     # 單支股票持股交易日上限
     max_days = 90
     # 停損設定
@@ -149,9 +150,9 @@ def main():
     min_volume = 1000 * 1000
     max_volume = None  # 500 * 1000
     min_price = 12
-    max_price = 100
+    max_price = 200
     min_change_percent = 0.03
-    consolidation_days = 20
+    consolidation_days = 10
 
     from_date_obj = datetime.datetime.strptime(from_date, "%Y/%m/%d")
     i = 0
@@ -208,7 +209,7 @@ def main():
     expected_net = int(sum_net / counter)
     expected_roi = sum_net / sum_cost
     expected_annualized_roi = expected_roi / avg_days * 365
-    print('進場次數: {}'.format(counter))
+    print('模擬次數: {}'.format(counter))
     print('勝 {}: {}'.format(wins_count, ', '.join('{}%'.format(round(roi * 100, 2)) for roi in wins)))
     print('負 {}: {}'.format(loses_count, ', '.join('{}%'.format(round(roi * 100, 2)) for roi in loses)))
     print('勝率: {}%'.format(win_rate * 100, ".2f"))
@@ -218,5 +219,5 @@ def main():
     print('平均持股天數: {}'.format(avg_days))
     print('年化投報率期望值: {}%'.format(round(expected_annualized_roi * 100, 2)))
 
-if __name__ == '__main__': main()
-
+if __name__ == '__main__':
+    main()
