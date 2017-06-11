@@ -180,17 +180,21 @@ class Retriever:
         if closing_price > peroid_highest:
             return True
 
-    # 條件一：
-    # (1) 成交量大於 1000，並超過 5 日均量的 2 倍
+    # 模型一：
+    # (1) 成交量大於設定值，並超過 5 日均量的 2 倍
     # (2) 股價設定區間
-    # (3) 漲半支停板以上
+    # (3) 漲幅大於設定值
     # (4) 突破盤整區
-    def check_condition_1(self, stock_code, line_number, **kwargs):
+    def check_model_1(self, stock_code, line_number, **kwargs):
         # 條件設定
         threshold_min_volume = kwargs.pop('min_volume', 1000)
-        threshold_min_price = kwargs.pop('min_price', 20)
-        threshold_max_price = kwargs.pop('max_price', 50)
+        threshold_max_volume = kwargs.pop('max_volume', 10 * 1000)
+        threshold_min_price = kwargs.pop('min_price', 12)
+        threshold_max_price = kwargs.pop('max_price', 1000)
         threshold_min_change_percent = kwargs.pop('min_chagne_percent', 0.03)
+        threshold_consolidation_days = kwargs.pop('consolidation_days', 20)
+        if threshold_min_price > threshold_max_price:
+            raise RetrieverException('選股最低價不可高於最高價')
 
         line = self.get_line_by_number(stock_code, line_number)
         data_dict = self.get_line_data_dict(line)
@@ -201,6 +205,8 @@ class Retriever:
             raise RetrieverException('no data')
         # 成交量門檻
         if volume < threshold_min_volume:
+            return False
+        if (threshold_max_volume is not None) and (volume > threshold_max_volume):
             return False
         # 股價門檻
         if closing_price < threshold_min_price:
@@ -232,7 +238,7 @@ class Retriever:
             return False
 
         # 是否突破盤整區
-        if not self.break_consolidation_area(stock_code, line_number, 10):
+        if not self.break_consolidation_area(stock_code, line_number, threshold_consolidation_days):
             return False
 
         return True
@@ -299,7 +305,7 @@ class Retriever:
                 lowest_price = float(data_dict['lowest_price'])
                 closing_price = float(data_dict['closing_price'])
                 difference = self.get_difference(stock_code, line_number)
-                condition_1 = self.check_condition_1(stock_code, line_number)
+                condition_1 = self.check_model_1(stock_code, line_number)
             except ValueError:
                 continue
 

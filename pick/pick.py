@@ -16,8 +16,14 @@ def search_filename(filename):
     return re.search('^(\d{4}).csv$', filename)
 
 
-def pick(date_obj):
+def pick(date_obj, **kwargs):
     date_tw = RocDateConverter().get_roc_date_by_datetime(date_obj)
+    min_volume = kwargs.pop('min_volume', 1 * 1000)
+    max_volume = kwargs.pop('max_volume', 10 * 1000)
+    min_price = kwargs.pop('min_price', 12)
+    max_price = kwargs.pop('max_price', 1000)
+    min_change_percent = kwargs.pop('min_chagne_percent', 0.03)
+    consolidation_days = kwargs.pop('consolidation_days', 20)
     retriever = Retriever()
     data_path = retriever.data_dir
     file_list = (f for f in listdir(data_path) if search_filename(f) is not None)
@@ -31,7 +37,13 @@ def pick(date_obj):
         if line_number is None:
             continue
         try:
-            check = retriever.check_condition_1(stock_code, line_number)
+            check = retriever.check_model_1(stock_code, line_number,
+                                            min_volume=min_volume,
+                                            max_volume=max_volume,
+                                            min_price=min_price,
+                                            max_price=max_price,
+                                            min_change_percent=min_change_percent,
+                                            consolidation_days=consolidation_days)
         except RetrieverException:
             continue
         if check:
@@ -43,7 +55,7 @@ def pick(date_obj):
 def test_one(stock_code, date):
     retriever = Retriever()
     line_number = retriever.search_line_number_by_date(stock_code, date)
-    check = retriever.check_condition_1(stock_code, line_number)
+    check = retriever.check_model_1(stock_code, line_number)
     print(check)
 
 
@@ -65,7 +77,9 @@ def simulate(stock_codes, pick_date_obj, max_days, stop_loss_factor):
     for stock_code in stock_codes:
         info = retriever.get_simulation_1_info(stock_code, pick_date_tw,
                                                max_days, stop_loss_factor)
-        cost = info['buy_in_price'] * 1000 * buy_in_unit
+        spend = info['buy_in_price'] * 1000 * buy_in_unit
+        buying_fee = max(spend * 0.001425 * 0.65, 20)
+        cost = spend + buying_fee
         total_cost += cost
         # print('股票編號: {}'.format(stock_code))
         data_set = info['data_set']
@@ -83,7 +97,10 @@ def simulate(stock_codes, pick_date_obj, max_days, stop_loss_factor):
                 end_date_obj = date_obj
                 end_date_tw = date_tw
             closing_price = data[1]
-        revenue = closing_price * 1000 * buy_in_unit
+        income = closing_price * 1000 * buy_in_unit
+        selling_fee = max(income * 0.001425 * 0.65, 20)
+        tax = income * 0.003
+        revenue = income - selling_fee - tax
         total_revenue += revenue
         timedelta = end_date_obj - start_date_obj
         through_days = timedelta.days + 1
@@ -125,9 +142,16 @@ def main():
     # 模擬進場次數
     day_count = 20
     # 單支股票持股交易日上限
-    max_days = 30
+    max_days = 100
     # 停損設定
     stop_loss_factor = 0.90
+    # 選股設定 - model_1
+    min_volume = 1 * 1000
+    max_volume = 500 * 1000
+    min_price = 12
+    max_price = 100
+    min_change_percent = 0.03
+    consolidation_days = 20
 
     from_date_obj = datetime.datetime.strptime(from_date, "%Y/%m/%d")
     i = 0
@@ -144,8 +168,15 @@ def main():
         i += 1
         if pick_date == today:
             break
-        winners = pick(pick_date_obj)
+        winners = pick(pick_date_obj,
+                       min_volume=min_volume,
+                       max_volume=max_volume,
+                       min_price=min_price,
+                       max_price=max_price,
+                       min_change_percent=min_change_percent,
+                       consolidation_days=consolidation_days)
         if 0 == len(winners):
+            print('{} 無符合條件的股票\n'.format(pick_date))
             continue
         try:
             result = simulate(winners, pick_date_obj, max_days, stop_loss_factor)

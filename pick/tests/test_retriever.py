@@ -192,22 +192,26 @@ class TestRetriever(unittest.TestCase):
         check = self.retriever.break_consolidation_area(stock_code, line_number, 10, 0.09)
         self.assertTrue(check)
 
-    def test_check_condition_1(self):
+    def test_check_model_1(self):
         # 不滿足此條件的
         stock_code = '1204'
         line_number = 20
-        check = self.retriever.check_condition_1(stock_code, line_number)
+        check = self.retriever.check_model_1(stock_code, line_number)
         self.assertFalse(check)
         # 滿足此條件的
         stock_code = '1204'
         line_number = 229
-        check = self.retriever.check_condition_1(stock_code, line_number, min_price = 4)
+        check = self.retriever.check_model_1(stock_code, line_number,
+                                             min_price=4,
+                                             min_volume=200 * 1000,
+                                             max_volume=300 * 1000,
+                                             consolidation_days=10)
         self.assertTrue(check)
         # 暫停交易的
         stock_code = '1204'
         line_number = 261
         with self.assertRaises(RetrieverException) as cm:
-            check = self.retriever.check_condition_1(stock_code, line_number)
+            check = self.retriever.check_model_1(stock_code, line_number)
         the_exception = cm.exception
         self.assertEqual(str(the_exception), 'no data')
 
