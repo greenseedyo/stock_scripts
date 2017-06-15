@@ -14,7 +14,7 @@ class Retriever:
     line_pool = {}
     index_name = 'tsec'
     # data_dir = '/Volumes/Backup Plus/stock/tsec/data'
-    data_dir = '/Users/yo/stock/data'
+    data_dir = '/Users/yo/stock/stock_scripts/tse_crawler/data'
 
     def __init__(self, stock_codes=[]):
         self.es = Elasticsearch(timeout=30)
