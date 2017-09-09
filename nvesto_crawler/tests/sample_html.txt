@@ -1,0 +1,859 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<!-- header-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:og="http://ogp.me/ns#"
+        xmlns:fb="http://www.facebook.com/2008/fbml">
+-->     
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="language" content="utf-8" />
+
+    
+    <meta name="title" content="0050元大台灣50 - 主力進出 - Nvesto" />
+    <link rel="stylesheet" type="text/css" href="/assets/style-afdf595b.css?1504844307" />
+<title> 0050元大台灣50 - 主力進出 - Nvesto </title>
+    <meta name="description" content="0050元大台灣50的主力進出券商....港商麥格理+1892張 美商高盛+206張 富邦+103張 凱基-1076張 臺銀證券-542張 合庫-140張" />
+<!-- icon-->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/153334d4/images/logo-icon/icon-57x57.png" sizes="57x57"/>
+    <link rel="apple-touch-icon" href="/assets/153334d4/images/logo-icon/icon-72x72.png" sizes="72x72"/>
+    <link rel="apple-touch-icon" href="/assets/153334d4/images/logo-icon/icon-114x114.png" sizes="114x114"/>
+    <link rel="apple-touch-icon" href="/assets/153334d4/images/logo-icon/icon-144x144.png" sizes="144x144"/>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-33085039-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    </head>
+<!-- end of header -->
+
+<body>
+<!-- top bar -->
+
+<div class="top-panel" style="background:#fff;margin-bottom:20px;">
+    <div class="announce"></div>
+    <div class="header_black" style="top:0px;">
+        <div class="container980">
+            <div class="header_logo">
+                <a href="/"><img src="/assets/153334d4/images/nvesto_logo.png" width="230" height="65" style="width:230px;height:65px;margin:0;" /></a>
+            </div>
+
+            <div class="header_body">
+            <!--我的自選股-->
+<div class="stock-list-widget">
+    <div class="ui-widget">
+        <div class="stock-button">
+            <div class="selfstockbg pt" data-pt="14">
+                <div class="tex_selfstock">我的自選股 </div>
+            </div> 
+            <div class="selfstock_rbg">
+                <div class="w1h4"></div>
+                <div>
+                    <a href="#"><div class="selfstock_btn_front_grey" onclick="this.className='selfstock_btn_front_grey'"></div></a>
+                    <a href="/tpe/2498/majorforce"><div class="selfstock_btn_next" onclick="this.className='selfstock_btn_next'"></div></a>
+                    <div class="clearboth"></div>
+                </div>
+            </div>
+            <div class="clearboth"></div>
+        </div>
+        
+        
+        <div class="stock-list hide">
+            <!--下拉選單-->
+            <div class="dropdown_bg">
+                <div class="dropdown-body">
+                    <div class="dropdown-body-left">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr height="30" data-tid="1" id="firsttrtag">
+                                <td width="10"> </td>
+                                <td width="80" class="tex_dropdown_black13">
+                                    我關注的                                                            </td>
+                                <td width="30" align="right" class="tex_dropdown_grey12">
+                                    (3)
+                                </td>
+                                <td width="20" align="right">
+                                    <div class="icon_dropdown_arrow"></div>
+                                </td>
+                            </tr>
+                                                    <tr height="30" data-tid="2" >
+                                <td width="10"> </td>
+                                <td width="80" class="tex_dropdown_black13">
+                                    我持股                                                              </td>
+                                <td width="30" align="right" class="tex_dropdown_grey12">
+                                    (0)
+                                </td>
+                                <td width="20" align="right">
+                                    <div class="icon_dropdown_arrow"></div>
+                                </td>
+                            </tr>
+                                                    <tr height="30" data-tid="3" >
+                                <td width="10"> </td>
+                                <td width="80" class="tex_dropdown_black13">
+                                    其他                                                                </td>
+                                <td width="30" align="right" class="tex_dropdown_grey12">
+                                    (0)
+                                </td>
+                                <td width="20" align="right">
+                                    <div class="icon_dropdown_arrow"></div>
+                                </td>
+                            </tr>
+                                                    <tr height="30" data-tid="4" >
+                                <td width="10"> </td>
+                                <td width="80" class="tex_dropdown_black13">
+                                    群組4                                                               </td>
+                                <td width="30" align="right" class="tex_dropdown_grey12">
+                                    (0)
+                                </td>
+                                <td width="20" align="right">
+                                    <div class="icon_dropdown_arrow"></div>
+                                </td>
+                            </tr>
+                                                    <tr height="30" data-tid="5" >
+                                <td width="10"> </td>
+                                <td width="80" class="tex_dropdown_black13">
+                                    群組5                                                               </td>
+                                <td width="30" align="right" class="tex_dropdown_grey12">
+                                    (0)
+                                </td>
+                                <td width="20" align="right">
+                                    <div class="icon_dropdown_arrow"></div>
+                                </td>
+                            </tr>
+                                                </table>
+                    </div>
+                    <div class="dropdown-body-right highlightbg">
+                                            <div id="tracelist1" class="tracelist-items">
+                                                        <div class="tracelist-items-stock">
+                                <a href="#">
+                                    <div class="tex_dropdown_stockname">
+                                        <div class="leftspace"></div>
+                                        <div class="stockid">
+                                            2498                                                                                </div>
+                                        <div class="stockname">
+                                                                                        宏達電                                                                          </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clearboth"></div>
+                                                    <div class="tracelist-items-stock">
+                                <a href="#">
+                                    <div class="tex_dropdown_stockname">
+                                        <div class="leftspace"></div>
+                                        <div class="stockid">
+                                            2330                                                                                </div>
+                                        <div class="stockname">
+                                                                                        台積電                                                                          </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clearboth"></div>
+                                                    <div class="tracelist-items-stock">
+                                <a href="#">
+                                    <div class="tex_dropdown_stockname">
+                                        <div class="leftspace"></div>
+                                        <div class="stockid">
+                                            2409                                                                                </div>
+                                        <div class="stockname">
+                                                                                        友達                                                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clearboth"></div>
+                                                </div>
+                                            <div id="tracelist2" class="tracelist-items hide">
+                                                    </div>
+                                            <div id="tracelist3" class="tracelist-items hide">
+                                                    </div>
+                                            <div id="tracelist4" class="tracelist-items hide">
+                                                    </div>
+                                            <div id="tracelist5" class="tracelist-items hide">
+                                                    </div>
+                                        </div>
+                </div>
+                <div align="center" class="dropdown_f">
+                    <div class="w1h1clear"></div>
+                    <!--<a href=""><div class="dropdown_btn_lookall"></div></a>-->
+                    <a href="/tpe/traceList/index"><div class="dropdown_btn_lookall"></div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="search-widget">
+    <div class="ui-widget">
+        <input type="text" id="search-box" placeholder="搜尋股號或公司名稱">
+        <div class="search-button"><div class="icon_search"></div></div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div><!-- header -->
+    <div class="menu_bb" style="top:65px;"></div>
+<div class="menu_off" style="top:65px;">
+    <div class="">
+            <!--<div class="menu_sep"></div>-->
+        <a href="/">
+            <div class="h_menu_left h_menu_left_tpe" style="width:50%; " title="">
+                <div style="margin-left: 30%;">
+                台灣股市                                </div>
+            </div>
+        </a>
+            <!--<div class="menu_sep"></div>-->
+        <a href="/etf">
+            <div class="h_menu_left h_menu_left_etf" style="width:50%; " title="">
+                <div style="margin-right: 30%;">
+                全球ETF                         </div>
+            </div>
+        </a>
+            <!--<div class="menu_sep"></div>-->
+    </div>
+</div>
+<div class="menu_off menu_off_tpe menu_second" style="top:95px;">
+    <div class="container980">
+        <!-- current 的 tab 就給它這兩個 class 讓它凹下去 menu_on menu_on_shadow -->
+            <div class="menu_sep menu_sep_tpe"></div>
+        <a href="/">
+            <div class="h_menu_left h_menu_left_tpe" style="" title="">
+                大盤                                            </div>
+        </a>
+            <div class="menu_sep menu_sep_tpe"></div>
+        <a href="/tpe/sector/market/TSE">
+            <div class="h_menu_left h_menu_left_tpe" style="" title="">
+                類股                                            </div>
+        </a>
+            <div class="menu_sep menu_sep_tpe"></div>
+        <a href="/tpe/ranking/tradeInfoRank/tradeVolume">
+            <div class="h_menu_left h_menu_left_tpe" style="" title="">
+                排行榜                                          </div>
+        </a>
+            <div class="menu_sep menu_sep_tpe"></div>
+        <a href="/tpe/2498">
+            <div class="h_menu_left_active h_menu_left_tpe_active" style="" title="">
+                個股                                            </div>
+        </a>
+            <div class="menu_sep menu_sep_tpe"></div>
+        <a href="/tpe/stockalert">
+            <div class="h_menu_left h_menu_left_tpe" style="position:relative;" title="金鑽會員加值功能">
+                多空選股                                                </div>
+        </a>
+    
+        <div class="menu_sep menu_sep_tpe"></div>
+            <!--<a href="">
+            <div class="h_menu_right">會員</div>
+        </a>-->
+        <div class="h_menu_right h_menu_right_tpe">
+            <div style="position:relative;" title="金鑽會員">
+                <div style="height:36px;*width:100px;" id="userlogin-click">
+                    <div style="padding-top:7px;line-height:20px;">
+                        <div class="icon_userdrop right"></div>
+                        <div class="right">yo</div>
+                        <div class="icon_user right"></div>
+                    </div>
+                </div>
+                <div style="float:right;position:absolute;right:-10px;top:36px;width:105px;right:-5px\9;top:32px\9;">
+                    <div class="userdropdown_bg userlogin-menu" style="display:none;">
+                        <table id="login-user-menu" width="105">
+                            <tr class="login-select" onclick="window.location='/tpe/traceList/index';return false;" onmouseover="this.style.backgroundColor='#e0edf4'" onmouseout="this.style.backgroundColor='#FFFFFF'">
+                                <td align="right" width="25"><div class="icon_userdrop_all"></div></td>
+                                <td align="left" width="80">自選股概覽</td>
+                            </tr>
+                            <tr class="login-select" onclick="window.location='/tpe/traceList/manage';return false;" onmouseover="this.style.backgroundColor='#e0edf4'" onmouseout="this.style.backgroundColor='#FFFFFF'">
+                                <td align="right" width="25"><div class="icon_userdrop_set"></div></td>
+                                <td align="left" width="80">自選股管理</td>
+                            </tr>
+                            <tr class="login-select" onclick="window.location='/user/config';return false;" onmouseover="this.style.backgroundColor='#e0edf4'" onmouseout="this.style.backgroundColor='#FFFFFF'">
+                                <td align="right" width="25"><div class="icon_userdrop_setid"></div></td>
+                                <td align="left" width="80">帳號設定</td>
+                            </tr>
+                            <!--<tr class="login-select" onclick="window.location='';return false;" onmouseover="this.style.backgroundColor='#e0edf4'" onmouseout="this.style.backgroundColor='#FFFFFF'">
+                                <td align="right" width="25"><div class="icon_look"></div></td>
+                                <td align="left" width="80">付款記錄</td>
+                            </tr>-->
+                            <tr>
+                                <td colspan="2" width="105" style="border-bottom: 1px solid #dddddd;"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" width="105" height="3"> </td>
+                            </tr>
+                            <tr class="login-select" onclick="window.location='/user/logout';return false;" onmouseover="this.style.backgroundColor='#e0edf4'" onmouseout="this.style.backgroundColor='#FFFFFF'">
+                                <td align="right" width="25"><div class="icon_userdrop_logout"></div></td>
+                                <td align="left" width="80">登出</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                                <i style="font-size: 20px;color: gold;position: absolute;top: -10px;left: 6px;font-weight: bold;">+</i>
+                            </div>      
+        </div>
+        </div>
+</div>
+</div>
+    <div class="clearfix"></div>
+<!-- end top bar-->
+
+<div class="container980">
+    <div class="breadcrum tex_black">
+            <div class="breadcrumbs">
+<a href="/">首頁</a> &raquo; <a href="/tpe/0050">0050(元大台灣50)</a> &raquo; <span>主力進出</span></div><!-- breadcrumbs -->
+        </div>
+    <div class="clear"></div>
+
+    <div class="main_container980">
+    <div class="sidebar_container">
+    <div id="menu">
+        <ul class="navmenu">
+                    <li style="border-bottom:1px solid #c0d5df;">
+                <a href="#" onclick="window.location='/tpe/0050';return false;">                                <div id="menutop1" class="menutop ">
+                    <table border="0" cellpadding="0" cellspacing="0" height="40" width="120" background="/assets/43ee9d84/images/bg_side_upshadow.png">
+                        <tr>
+                            <td width="40"><div class="icon_sidemenu_icon1off"></div></td>
+                            <td width="78" colspan="2">個股概覽</td>
+                                                    </tr>
+                    </table>
+                </div>
+                </a>                    </li>
+                        <li style="border-bottom:1px solid #c0d5df;">
+                                <div id="menutop2" class="menutop ">
+                    <table border="0" cellpadding="0" cellspacing="0" height="40" width="120" background="/assets/43ee9d84/images/bg_side_upshadow.png">
+                        <tr>
+                            <td width="40"><div class="icon_sidemenu_icon2off"></div></td>
+                            <td width="54">技術面</td>
+                            <td width="24"><div class="toggle"></div></td>                                              </tr>
+                    </table>
+                </div>
+                                <ul class="submenu">
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/candleStick">K線</a></td>                                                     </tr>
+                        </table>
+                    </li>
+                            </ul>
+                            </li>
+                        <li style="border-bottom:1px solid #c0d5df;">
+                                <div id="menutop3" class="menutop ">
+                    <table border="0" cellpadding="0" cellspacing="0" height="40" width="120" background="/assets/43ee9d84/images/bg_side_upshadow.png">
+                        <tr>
+                            <td width="40"><div class="icon_sidemenu_icon3off"></div></td>
+                            <td width="54">消息面</td>
+                            <td width="24"><div class="toggle"></div></td>                                              </tr>
+                    </table>
+                </div>
+                                <ul class="submenu">
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/stockNews">個股新聞</a></td>                                                  </tr>
+                        </table>
+                    </li>
+                            </ul>
+                            </li>
+                        <li style="border-bottom:1px solid #c0d5df;">
+                                <div id="menutop4" class="menutop ">
+                    <table border="0" cellpadding="0" cellspacing="0" height="40" width="120" background="/assets/43ee9d84/images/bg_side_upshadow.png">
+                        <tr>
+                            <td width="40"><div class="icon_sidemenu_icon4off"></div></td>
+                            <td width="54">籌碼面</td>
+                            <td width="24"><div class="toggle"></div></td>                                              </tr>
+                    </table>
+                </div>
+                                <ul class="submenu">
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"><div class="icon_sidemenu_onarrow"></div></td>
+                                <td width="78" class="tex_sidemenu_liston">主力進出</td>                                                        </tr>
+                        </table>
+                    </li>
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/investor/chart">三大法人</a></td>                                                     </tr>
+                        </table>
+                    </li>
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/margin/chart">融資融券</a></td>                                                       </tr>
+                        </table>
+                    </li>
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/brokerAnalysis">券商追蹤</a></td>                                                     </tr>
+                        </table>
+                    </li>
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/ratioOrder">分級買賣量</a></td>                                                       </tr>
+                        </table>
+                    </li>
+                            </ul>
+                            </li>
+                        <li style="border-bottom:1px solid #c0d5df;">
+                                <div id="menutop5" class="menutop ">
+                    <table border="0" cellpadding="0" cellspacing="0" height="40" width="120" background="/assets/43ee9d84/images/bg_side_upshadow.png">
+                        <tr>
+                            <td width="40"><div class="icon_sidemenu_icon5off"></div></td>
+                            <td width="54">基本面</td>
+                            <td width="24"><div class="toggle"></div></td>                                              </tr>
+                    </table>
+                </div>
+                                <ul class="submenu">
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/monthRevenue">每月營收</a></td>                                                       </tr>
+                        </table>
+                    </li>
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/incomeOutline">損益概況</a></td>                                                      </tr>
+                        </table>
+                    </li>
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/gainAbility">獲利能力</a></td>                                                        </tr>
+                        </table>
+                    </li>
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/growthAbility">成長能力</a></td>                                                      </tr>
+                        </table>
+                    </li>
+                            </ul>
+                            </li>
+                        <li style="border-bottom:1px solid #c0d5df;">
+                                <div id="menutop6" class="menutop ">
+                    <table border="0" cellpadding="0" cellspacing="0" height="40" width="120" background="/assets/43ee9d84/images/bg_side_upshadow.png">
+                        <tr>
+                            <td width="40"><div class="icon_sidemenu_icon6off"></div></td>
+                            <td width="54">動能圖</td>
+                            <td width="24"><div class="toggle"></div></td>                                              </tr>
+                    </table>
+                </div>
+                                <ul class="submenu">
+                                <li>
+                        <table border="0" cellpadding="0" cellspacing="0" height="28" width="120">
+                            <tr>
+                                <td width="40" align="right"> </td>
+                                <td width="78"><a href="/tpe/0050/stockMomentum">動能圖</a></td>                                                        </tr>
+                        </table>
+                    </li>
+                            </ul>
+                            </li>
+                    </ul>
+    </div>
+</div>
+
+        <div class="main_container">
+        <div class="stockoutline">
+    <div class="info_grey">
+        <div class="title tex_black">
+                        <div class="left" style="width:590px;padding-right:10px;"> 
+                <b style="line-height:25px;">元大台灣50(0050) - 主力進出</b>
+            </div>
+            <!--<b>-->
+            <div class="right">
+                                            <div style="float:right;*margin-right:17px;width:130px;height:36px;">
+                    <div class="tracelist-widget">
+    <div style="float:right;padding-right:122px;*margin-top:-12px;height:30px;">
+        <div style="position:relative;">
+            <div id="0050_tpe" class="tracelist_follow btn_addfollow" style="position:absolute;left:0px;top:0px;"></div>
+            <div id="addfollow_frame" style="position:absolute;left:0px;top:0px;z-index:100000;display:none;">
+                <table class="tracelist-widget-table" style="margin:5px;z-index:1000001;">
+                    <tr>
+                        <td colspan="3" class="tex_grey999" style="">
+                            選擇群組
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="1" style="">
+                            <div style="border-bottom: 1px solid #e1e1e1; width:136px;height:1px;padding:0;"></div>
+                        </td>
+                    </tr>
+
+                                            <tr class="checkboxdivrow cursor pt" data-pt="16">
+                            <td width="10" valign="top" style="">
+                                <div class="checkboxdiv checkbox_pic" data-tid="1"></div>
+                            </td>
+                            <td class="tex_black" style="">
+                                我關注的                                                        </td>
+                            <td valign="top" width="20" style="color:#aaaaaa;">
+                                (<span id="so-tl-1">3</span>)
+                            </td>
+                        </tr>
+                                            <tr class="checkboxdivrow cursor pt" data-pt="16">
+                            <td width="10" valign="top" style="">
+                                <div class="checkboxdiv checkbox_pic" data-tid="2"></div>
+                            </td>
+                            <td class="tex_black" style="">
+                                我持股                                                  </td>
+                            <td valign="top" width="20" style="color:#aaaaaa;">
+                                (<span id="so-tl-2">0</span>)
+                            </td>
+                        </tr>
+                                            <tr class="checkboxdivrow cursor pt" data-pt="16">
+                            <td width="10" valign="top" style="">
+                                <div class="checkboxdiv checkbox_pic" data-tid="3"></div>
+                            </td>
+                            <td class="tex_black" style="">
+                                其他                                                    </td>
+                            <td valign="top" width="20" style="color:#aaaaaa;">
+                                (<span id="so-tl-3">0</span>)
+                            </td>
+                        </tr>
+                                            <tr class="checkboxdivrow cursor pt" data-pt="16">
+                            <td width="10" valign="top" style="">
+                                <div class="checkboxdiv checkbox_pic" data-tid="4"></div>
+                            </td>
+                            <td class="tex_black" style="">
+                                群組4                                                   </td>
+                            <td valign="top" width="20" style="color:#aaaaaa;">
+                                (<span id="so-tl-4">0</span>)
+                            </td>
+                        </tr>
+                                            <tr class="checkboxdivrow cursor pt" data-pt="16">
+                            <td width="10" valign="top" style="">
+                                <div class="checkboxdiv checkbox_pic" data-tid="5"></div>
+                            </td>
+                            <td class="tex_black" style="">
+                                群組5                                                   </td>
+                            <td valign="top" width="20" style="color:#aaaaaa;">
+                                (<span id="so-tl-5">0</span>)
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+                </div>
+                                <div style="float:right;*margin-top:-19px;width:100px;height:36px;margin-right:-10px">
+                    <div class="btn_fbshare"></div>
+
+                </div>
+                        </div>
+            <div class="clear"></div>
+            
+        </div>
+        <div class="sep_margin">
+            <table>
+                <tr>
+                    <td><span class="tex_black fs26mr10"><b>82.70</b></span></td>
+                    <td><div class="info_sep">&nbsp;</div></td>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <td><div class="icon_upred"></div></td>
+                            <td class="tex_up fs26mr10"><b>0.45<span class="fs15mr10 ml10">(0.55%)</span></b></td>
+                        </table>
+                    </td>
+                    <td width="10"><div class="info_sep">&nbsp;</div></td>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                <td nowrap class="tex_grey888 left fs12">2017 - 09 - 08</td>
+                            </tr>                                               
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td width="90" class="tex_black fs15mr10">開: 82.40</td>
+                                            <td width="90" class="tex_black fs15mr10">高: 82.90</td>
+                                            <td width="90" class="tex_black fs15mr10">低: 82.40</td>
+                                            <td width="150" class="tex_black fs15mr10">成交量: 2,842</td>
+                                                                                    </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="body_container_inner">
+
+<div class="alert alert-danger" role="alert">目前已開放查詢 2015/06/01 後之最新資料。</div>
+
+    <div class="date-picker-widget btn-toolbar row">
+            <div class="span"></div>
+    
+    <div class="btn-group span" data-toggle="buttons-radio" style="margin-top:10px;">
+                <button class="btn shortcut" value="0" title="最近1日">1日</button>
+                <button class="btn shortcut" value="7" title="最近1週">1週</button>
+                <button class="btn shortcut" value="14" title="最近2週">2週</button>
+                <button class="btn shortcut" value="30" title="最近1個月">1個月</button>
+            </div>
+
+    <div class="span" style="margin-top:10px;">
+        <input type="text" class="date-from icon_date"/> ~ <input type="text" class="date-to icon_date"/>       </div>
+
+        <div class="btn-group span">
+        <button class="btn shift shift-pre">&laquo;</button>
+        <button class="btn shift shift-next">&raquo;</button>
+    </div>
+    </div>
+
+
+    <ul class="nav nav-tabs majorforce-tabs">
+        <li class="active summary"><a href="#!/view/summary">券商</a></li>
+        <li class="detail"><a href="#!/view/detail">券商分行</a></li>
+    </ul>
+    <div class="chart hide"></div>
+    <div class="loading" style="height:627px"></div>
+    <div class="err-msg hide"></div>
+</div>
+
+<div class="clearfix"></div>
+<script type="text/html" class="majorforce-tmpl">
+    <div class="legend"><img src="/assets/153334d4/images/samplepic.gif" alt="" /></div>
+    <div class="clearfix"></div><br/>
+    <div class="row">
+        <div class="span6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><span class="icon_tablebuy"></span>買超券商</th>
+                        <th>買進</th>
+                        <th>賣出</th>
+                        <th>買超</th>
+                        <th>均價</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% _.each(data.buy, function(i, idx){
+                            if (!_.isNull(i.name)) {
+                    %>
+                        <tr>
+                            <td class="levels level<%= i.level %>"><%= ((_.isUndefined(i.broker_id)) ? i.name : '<a href="/brokerAnalysis/index/stockId/0050#!/fromdate/'+data.fromdate+'/todate/'+data.todate+'/broker/'+i.broker_id+'" style="color:white;" title="追蹤此券商分行進出明細">'+i.name+'</a>' ) %></td>
+                            <td class="number <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.buy).toFixed(0) %></td>
+                            <td class="number <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.sell).toFixed(0) %></td>
+                            <td class="number upred <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.net).toFixed(0) %></td>
+                            <td class="number <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.price).toFixed(2) %></td>
+                        </tr>
+                    <%} }); %>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="span6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><span class="icon_tablesale"></span>賣超券商</th>
+                        <th>買進</th>
+                        <th>賣出</th>
+                        <th>賣超</th>
+                        <th>均價</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% _.each(data.sell, function(i, idx){
+                            if (!_.isNull(i.name)) {
+                    %>
+                        <tr>
+                            <td class="levels level<%= i.level %>"><%= ((_.isUndefined(i.broker_id)) ? i.name : '<a href="/brokerAnalysis/index/stockId/0050#!/fromdate/'+data.fromdate+'/todate/'+data.todate+'/broker/'+i.broker_id+'" style="color:white;" title="追蹤此券商分行進出明細">'+i.name+'</a>' ) %></td>
+                            <td class="number <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.buy).toFixed(0) %></td>
+                            <td class="number <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.sell).toFixed(0) %></td>
+                            <td class="number downgreen <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.net).toFixed(0) %></td>
+                            <td class="number <%= (idx % 2)? 'odd': 'even' %>"><%= parseFloat(i.price).toFixed(2) %></td>
+                        </tr>
+                    <%} }); %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" class="block-tmpl">
+    <a class="nvestoLogin fancybox fancybox.iframe" href="/user/login">
+        <div style="text-align: center; margin: 90px;">
+            <img src="/assets/153334d4/images/loginSee.gif" alt="" />           </div>
+    </a>
+</script>
+
+        </div>
+
+    </div>
+    <div class="clear"></div>
+
+</div>
+<div class="clear"></div>
+
+<!-- footer -->
+<div id="footer" class="bottom-panel">
+<div class="footer_up_blue"></div>
+<div align="center" class="footer_sec1_bg" style="background-color:#2D2E2F">
+    <div id="footer_width980">
+        <div class="sec1_pic1">
+            <div class="tex_sec1_h">專業資訊，輕鬆追蹤</div>
+            <div class="tex_sec1">Nvesto 專注於提供專業、創新、和易用的財經資<br/>訊服務，為投資者量身打造的個股<br/>日報主動遞送您關心的個股<br/>變化，絕對不可錯過！</div>
+        </div>
+    <div class="sec1_sep"></div>
+    <div class="sec1_pic2">
+        <div class="tex_sec1_h">數據視覺，清楚直覺</div>
+            <div class="tex_sec1">資訊視覺化是我們的專長。以創新的圖像精簡<br/>並取代繁複的投資資訊，讓您用最直觀的<br/>方式快速了解台股行<br/>情，搶得投資先機。</div>
+    </div>
+    <div class="sec1_sep"></div>
+    <div class="sec1_pic3">
+            <div class="tex_sec1_h">行動支援，隨時隨地</div>
+            <div class="tex_sec1">Nvesto採用最先進的 HTML5技術，在行動裝置<br/>上互動圖表依舊能夠完美呈現，<br/>讓您走到哪裡都可以優遊自如隨<br/>手查看，漲跌脈動滴水不漏。</div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+<div class="footer_sec2_bg">
+    <table class="footTable">
+        <tr>
+            <td class="about">
+                <div class="tex_sec2_h">Nvesto</div>
+                <table class="bTable">
+                    <tr><td><div class="tex_sec2"><a href="/site/page/view/about">關於我們</a></div></td></tr>
+                    <tr><td><div class="tex_sec2"><a href="/site/page/view/career">徵才訊息</a></div></td></tr>
+                    <tr><td><div class="tex_sec2"><a href="http://www.facebook.com/nvesto" target="_blank">Nvesto 粉絲團</a></div></td></tr>
+                    <tr><td><div class="tex_sec2"><a href="/site/contact">聯絡我們</a></div></td></tr>
+                </table>
+            </td>
+            <td class="analysis">
+                            <div class="tex_sec2_h">台股分析</div>
+                <table class="bTable">
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/twse/candleStick">大盤K線</a></span></td>
+                        <td><span><a href="/tpe/2498/investor/chart">三大法人</a></span></td>
+                    </div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/marketNews/headline">股市新聞</a></span></td>
+                        <td><span><a href="/tpe/2498/margin/chart">融資融券</a></span></td>
+                    </div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2498">個股總覽</a></span></td>
+                        <td><span><a href="/tpe/2498/monthRevenue">每月營收</a></span></td></div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2498/candleStick">動態K線</a></span></td>
+                        <td><span><a href="/tpe/2498/incomeOutline">損益概況</a></span></td></div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2498/stockNews">個股新聞</a></span></td>
+                        <td><span><a href="/tpe/2498/gainAbility">獲利能力</a></span></td></div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2498/majorForce">主力進出</a></span></td>
+                        <td><span><a href="/tpe/2498/growthAbility">成長能力</a></span></td>
+                    </div></tr>
+                </table>
+                        </td>
+            <td class="hotstock">
+                            <div class="tex_sec2_h">熱門台股</div>
+                <table class="bTable">
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/1101">1101 台泥</a></span></td>
+                        <td><span><a href="/tpe/2002">2002 中鋼</a></span></td>
+                    </div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2201">2201 裕隆</a></span></td>
+                        <td><span><a href="/tpe/2317">2317 鴻海</a></span></td>
+                    </div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2330">2330 台積電</a></span></td>
+                        <td><span><a href="/tpe/2353">2353 宏碁</a></span></td>
+                    </div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2382">2382 廣達</a></span></td>
+                        <td><span><a href="/tpe/2409">2409 友達</a></span></td>
+                    </div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/2882">2882 國泰金</a></span></td>
+                        <td><span><a href="/tpe/2890">2890 永豐金</a></span></td>
+                    </div></tr>
+                    <tr><div class="tex_sec2">
+                        <td><span><a href="/tpe/3481">3481 群創</a></span></td>
+                        <td><span><a href="/tpe/9945">9945 潤泰新</a></span></td>
+                    </div></tr>
+                </table>
+                        </td>
+            <!--<td class="hotstock">
+                <div class="tex_sec2_h">熱門ETF</div>
+                <table class="bTable">
+
+                </table>
+                </div>
+            </td>-->
+            <!--<td class="memberServ">
+
+            </td>-->
+        </tr>
+    </table>
+</div>
+<div class="footer_sec3_bg">
+    <table class="pubInfo" width="980px">
+        <tr>
+            <td width="830px" style="line-height: 20px;">
+                <div class="tex_sec3">本站提供之分析資訊與功能僅供參考，本站不保證資訊正確及即時性，依本站資訊交易發生損失需自行負責，請謹慎評估風險。</div>
+            </td>
+            <td rowspan="2" width="50px">
+                <a href="http://www.facebook.com/nvesto" target="_blank"><div class="btn_fb" >&nbsp;</div></a>
+            </td>
+        </tr>
+        <tr>
+            <td width="830px" style="line-height: 20px;">
+                <div class="tex_sec3_copyright">&copy;Copyright 2017 Nvesto Inc. All Rights Reserved.&nbsp;&nbsp;&nbsp;                                 <span class="tex_bottom"><a style="color: inherit; font-size: inherit;" href="/site/page/view/vip_tos">會員服務條款</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;                                 <span class="tex_bottom"><a style="color: inherit; font-size: inherit;" href="/site/page/view/tos">服務條款</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span class="tex_bottom"><a style="color: inherit; font-size: inherit;" href="/site/page/view/privacy">隱私政策</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span class="tex_bottom"><a style="color: inherit; font-size: inherit;" href="/site/page/view/disclaimer">免責聲明</a></span>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+<!-- end footer -->
+<script type="text/javascript" src="/assets/script-2-d7835ae8.js?1504844307"></script>
+<script type="text/javascript" src="//connect.facebook.net/en_US/sdk.js"></script>
+<script type="text/javascript" src="/searchDispatcher/index/stockType/tpe/6"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+js_tracelist={"TARGET_STOCK":"0050","stockType":"tpe","broker":"nvesto","setTraceListItemUrl":"\/ajax\/traceListFollow.setTraceListItem","removeTraceListItemUrl":"\/ajax\/traceListFollow.removeTraceListItem"};
+FACKBOOK_SHARE_JS_VARS={"appId":"559107294212918"};
+DATE_PICKER_JS_VARS={"dateList":["2016-01-04","2016-01-05","2016-01-06","2016-01-07","2016-01-08","2016-01-11","2016-01-12","2016-01-13","2016-01-15","2016-01-18","2016-01-19","2016-01-20","2016-01-21","2016-01-22","2016-01-25","2016-01-26","2016-01-27","2016-01-28","2016-01-29","2016-01-30","2016-02-01","2016-02-02","2016-02-03","2016-02-15","2016-02-16","2016-02-17","2016-02-18","2016-02-19","2016-02-22","2016-02-23","2016-02-24","2016-02-25","2016-02-26","2016-03-01","2016-03-02","2016-03-03","2016-03-04","2016-03-07","2016-03-08","2016-03-09","2016-03-10","2016-03-11","2016-03-14","2016-03-15","2016-03-16","2016-03-17","2016-03-18","2016-03-21","2016-03-22","2016-03-23","2016-03-24","2016-03-25","2016-03-28","2016-03-29","2016-03-30","2016-03-31","2016-04-01","2016-04-06","2016-04-07","2016-04-08","2016-04-11","2016-04-12","2016-04-13","2016-04-14","2016-04-15","2016-04-18","2016-04-19","2016-04-20","2016-04-21","2016-04-22","2016-04-25","2016-04-26","2016-04-27","2016-04-28","2016-04-29","2016-05-03","2016-05-04","2016-05-05","2016-05-06","2016-05-09","2016-05-10","2016-05-11","2016-05-12","2016-05-13","2016-05-16","2016-05-17","2016-05-18","2016-05-19","2016-05-20","2016-05-23","2016-05-24","2016-05-25","2016-05-26","2016-05-27","2016-05-30","2016-05-31","2016-06-01","2016-06-02","2016-06-03","2016-06-04","2016-06-06","2016-06-07","2016-06-08","2016-06-13","2016-06-14","2016-06-15","2016-06-16","2016-06-17","2016-06-20","2016-06-21","2016-06-22","2016-06-23","2016-06-24","2016-06-27","2016-06-28","2016-06-29","2016-06-30","2016-07-01","2016-07-04","2016-07-05","2016-07-06","2016-07-07","2016-07-11","2016-07-12","2016-07-13","2016-07-14","2016-07-15","2016-07-18","2016-07-19","2016-07-20","2016-07-21","2016-07-22","2016-07-25","2016-07-26","2016-07-27","2016-07-28","2016-07-29","2016-08-01","2016-08-02","2016-08-03","2016-08-04","2016-08-05","2016-08-08","2016-08-09","2016-08-11","2016-08-12","2016-08-15","2016-08-16","2016-08-17","2016-08-18","2016-08-19","2016-08-22","2016-08-23","2016-08-24","2016-08-25","2016-08-26","2016-08-29","2016-08-30","2016-08-31","2016-09-01","2016-09-02","2016-09-05","2016-09-06","2016-09-07","2016-09-08","2016-09-09","2016-09-10","2016-09-12","2016-09-13","2016-09-14","2016-09-19","2016-09-20","2016-09-21","2016-09-22","2016-09-23","2016-09-26","2016-09-29","2016-09-30","2016-10-03","2016-10-04","2016-10-05","2016-10-06","2016-10-07","2016-10-11","2016-10-12","2016-10-13","2016-10-14","2016-10-17","2016-10-18","2016-10-19","2016-10-20","2016-10-21","2016-10-24","2016-10-25","2016-10-26","2016-10-27","2016-10-28","2016-10-31","2016-11-01","2016-11-02","2016-11-03","2016-11-04","2016-11-07","2016-11-08","2016-11-09","2016-11-10","2016-11-11","2016-11-14","2016-11-15","2016-11-16","2016-11-17","2016-11-18","2016-11-21","2016-11-22","2016-11-23","2016-11-24","2016-11-25","2016-11-28","2016-11-29","2016-11-30","2016-12-01","2016-12-02","2016-12-05","2016-12-06","2016-12-07","2016-12-08","2016-12-09","2016-12-12","2016-12-13","2016-12-14","2016-12-15","2016-12-16","2016-12-19","2016-12-20","2016-12-21","2016-12-22","2016-12-23","2016-12-26","2016-12-27","2016-12-28","2016-12-29","2016-12-30","2017-01-03","2017-01-04","2017-01-05","2017-01-06","2017-01-09","2017-01-10","2017-01-11","2017-01-12","2017-01-13","2017-01-16","2017-01-17","2017-01-18","2017-01-19","2017-01-20","2017-01-23","2017-01-24","2017-02-02","2017-02-03","2017-02-06","2017-02-07","2017-02-09","2017-02-10","2017-02-13","2017-02-14","2017-02-15","2017-02-16","2017-02-17","2017-02-18","2017-02-20","2017-02-21","2017-02-22","2017-02-23","2017-02-24","2017-03-01","2017-03-02","2017-03-03","2017-03-06","2017-03-07","2017-03-08","2017-03-09","2017-03-10","2017-03-13","2017-03-14","2017-03-15","2017-03-16","2017-03-17","2017-03-20","2017-03-21","2017-03-22","2017-03-23","2017-03-24","2017-03-27","2017-03-28","2017-03-29","2017-03-30","2017-03-31","2017-04-05","2017-04-06","2017-04-07","2017-04-10","2017-04-11","2017-04-12","2017-04-13","2017-04-14","2017-04-17","2017-04-18","2017-04-19","2017-04-20","2017-04-21","2017-04-24","2017-04-25","2017-04-26","2017-04-27","2017-04-28","2017-05-02","2017-05-03","2017-05-04","2017-05-05","2017-05-08","2017-05-09","2017-05-10","2017-05-11","2017-05-12","2017-05-15","2017-05-16","2017-05-17","2017-05-18","2017-05-19","2017-05-22","2017-05-23","2017-05-24","2017-05-25","2017-05-26","2017-05-31","2017-06-01","2017-06-02","2017-06-03","2017-06-05","2017-06-06","2017-06-07","2017-06-08","2017-06-09","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16","2017-06-19","2017-06-20","2017-06-21","2017-06-22","2017-06-23","2017-06-26","2017-06-27","2017-06-28","2017-06-29","2017-06-30","2017-07-03","2017-07-04","2017-07-05","2017-07-06","2017-07-07","2017-07-10","2017-07-11","2017-07-12","2017-07-13","2017-07-14","2017-07-17","2017-07-18","2017-07-19","2017-07-20","2017-07-21","2017-07-24","2017-07-25","2017-07-26","2017-07-27","2017-07-28","2017-07-31","2017-08-01","2017-08-02","2017-08-03","2017-08-04","2017-08-07","2017-08-08","2017-08-09","2017-08-10","2017-08-11","2017-08-14","2017-08-15","2017-08-16","2017-08-17","2017-08-18","2017-08-21","2017-08-22","2017-08-23","2017-08-24","2017-08-25","2017-08-28","2017-08-29","2017-08-30","2017-08-31","2017-09-01","2017-09-04","2017-09-05","2017-09-06","2017-09-07","2017-09-08"],"shiftDate":true,"lang":{"dayNamesMin":["\u65e5","\u4e00","\u4e8c","\u4e09","\u56db","\u4e94","\u516d"],"monthNames":["\u4e00\u6708","\u4e8c\u6708","\u4e09\u6708","\u56db\u6708","\u4e94\u6708","\u516d\u6708","\u4e03\u6708","\u516b\u6708","\u4e5d\u6708","\u5341\u6708","\u5341\u4e00\u6708","\u5341\u4e8c\u6708"],"monthNamesShort":["\u4e00\u6708","\u4e8c\u6708","\u4e09\u6708","\u56db\u6708","\u4e94\u6708","\u516d\u6708","\u4e03\u6708","\u516b\u6708","\u4e5d\u6708","\u5341\u6708","\u5341\u4e00\u6708","\u5341\u4e8c\u6708"]}};
+MajorForce_JS_VARS={"latest":"2017-09-08","dataUrl":"\/tpe\/0050\/majorforce\/ajaxGetData","data":{"buy":[{"broker_id":"1360","parent_id":"1360","name":"\u6e2f\u5546\u9ea5\u683c\u7406","buy":"1909.0000","sell":"17.0000","net":"1892.0000","price":"82.716874","level":10},{"broker_id":"1480","parent_id":"1480","name":"\u7f8e\u5546\u9ad8\u76db","buy":"206.0000","sell":"0.0000","net":"206.0000","price":"82.797087","level":6},{"broker_id":"9600","parent_id":"9600","name":"\u5bcc\u90a6","buy":"114.3000","sell":"11.0000","net":"103.3000","price":"82.860734","level":5},{"broker_id":"9300","parent_id":"9300","name":"\u83ef\u5357\u6c38\u660c","buy":"69.4040","sell":"6.4390","net":"62.9650","price":"82.715860","level":4},{"broker_id":"5380","parent_id":"5380","name":"\u7b2c\u4e00\u91d1","buy":"30.0000","sell":"5.0000","net":"25.0000","price":"82.648571","level":1},{"broker_id":"6210","parent_id":"6210","name":"\u65b0\u767e\u738b","buy":"2.0000","sell":"0.0000","net":"2.0000","price":"82.525000","level":0},{"broker_id":"6950","parent_id":"6950","name":"\u798f\u52dd","buy":"2.0000","sell":"0.0000","net":"2.0000","price":"82.650000","level":0},{"broker_id":"6451","parent_id":"6450","name":"\u6c38\u5168","buy":"0.0260","sell":"0.0000","net":"0.0260","price":"83.000000","level":0},{"broker_id":"8450","parent_id":"8450","name":"\u5eb7\u548c","buy":"0.0100","sell":"0.0000","net":"0.0100","price":"83.000000","level":0}],"sell":[{"broker_id":"9205","parent_id":"9200","name":"\u51f1\u57fa","buy":"12.1010","sell":"1088.0330","net":"-1075.9320","price":"82.763802","level":10},{"broker_id":"1040","parent_id":"1040","name":"\u81fa\u9280\u8b49\u5238","buy":"27.0000","sell":"569.1000","net":"-542.1000","price":"82.701392","level":7},{"broker_id":"1020","parent_id":"1020","name":"\u5408\u5eab","buy":"0.0000","sell":"140.4000","net":"-140.4000","price":"82.736467","level":5},{"broker_id":"9A00","parent_id":"9A00","name":"\u6c38\u8c50\u91d1","buy":"15.1110","sell":"155.2230","net":"-140.1120","price":"82.640119","level":5},{"broker_id":"9800","parent_id":"9800","name":"\u5143\u5927","buy":"349.6370","sell":"425.2500","net":"-75.6130","price":"82.570970","level":4},{"broker_id":"8850","parent_id":"8850","name":"\u946b\u8c50","buy":"0.0000","sell":"69.5000","net":"-69.5000","price":"82.584173","level":4},{"broker_id":"5920","parent_id":"5920","name":"\u5143\u5bcc","buy":"37.5370","sell":"99.5870","net":"-62.0500","price":"82.562075","level":4},{"broker_id":"1030","parent_id":"1030","name":"\u571f\u9280","buy":"0.0000","sell":"49.0000","net":"-49.0000","price":"82.788776","level":3},{"broker_id":"8560","parent_id":"8560","name":"\u65b0\u5149","buy":"8.0000","sell":"32.1100","net":"-24.1100","price":"82.773124","level":1},{"broker_id":"9100","parent_id":"9100","name":"\u7fa4\u76ca\u91d1\u9f0e","buy":"1.0000","sell":"22.0000","net":"-21.0000","price":"82.717391","level":1},{"broker_id":"6162","parent_id":"6160","name":"\u4e2d\u570b\u4fe1\u8a17","buy":"0.0000","sell":"20.1150","net":"-20.1150","price":"82.569973","level":1},{"broker_id":"1160","parent_id":"1160","name":"\u65e5\u76db","buy":"17.9130","sell":"35.8300","net":"-17.9170","price":"82.688332","level":0},{"broker_id":"6012","parent_id":"6010","name":"?n\u4e9e\u8b49\u5238","buy":"0.0000","sell":"12.0000","net":"-12.0000","price":"82.695833","level":0},{"broker_id":"5320","parent_id":"5320","name":"\u9ad8\u6a4b","buy":"0.0000","sell":"10.0000","net":"-10.0000","price":"82.850000","level":0},{"broker_id":"8840","parent_id":"8840","name":"\u7389\u5c71","buy":"1.0000","sell":"9.0100","net":"-8.0100","price":"82.615385","level":0},{"broker_id":"5850","parent_id":"5850","name":"\u7d71\u4e00","buy":"21.5800","sell":"26.9280","net":"-5.3480","price":"82.655727","level":0},{"broker_id":"8880","parent_id":"8880","name":"\u570b\u6cf0","buy":"0.0000","sell":"4.0000","net":"-4.0000","price":"82.800000","level":0},{"broker_id":"6460","parent_id":"6460","name":"\u5927\u660c","buy":"0.0000","sell":"3.2420","net":"-3.2420","price":"82.676126","level":0},{"broker_id":"2180","parent_id":"2180","name":"\u4e9e\u6771","buy":"0.0000","sell":"3.0000","net":"-3.0000","price":"82.616667","level":0},{"broker_id":"7036","parent_id":"7030","name":"\u81f4\u548c","buy":"0.0000","sell":"2.0000","net":"-2.0000","price":"82.850000","level":0},{"broker_id":"1113","parent_id":"1110","name":"\u53f0\u7063\u4f01\u9280","buy":"0.0000","sell":"2.0000","net":"-2.0000","price":"82.775000","level":0},{"broker_id":"1262","parent_id":"1260","name":"\u5b8f\u9060","buy":"0.2000","sell":"2.0000","net":"-1.8000","price":"82.659091","level":0},{"broker_id":"7000","parent_id":"7000","name":"\u5146\u8c50","buy":"13.5070","sell":"15.0000","net":"-1.4930","price":"82.763216","level":0},{"broker_id":"5110","parent_id":"5110","name":"\u5bcc\u9686","buy":"0.0000","sell":"1.0000","net":"-1.0000","price":"82.750000","level":0},{"broker_id":"8150","parent_id":"8150","name":"\u53f0\u65b0","buy":"4.1200","sell":"5.0400","net":"-0.9200","price":"82.710699","level":0},{"broker_id":"7792","parent_id":"7790","name":"\u570b\u7968","buy":"0.3610","sell":"1.0000","net":"-0.6390","price":"82.926525","level":0}],"fromdate":"2017-08-26","todate":"2017-09-08","csrf":"wiyIZZ-vUE9ptnUcUZhYEA_O8joHon4UWedira6ud7qnMBQuYV29K_1oQy3fPBTIewR9FIYkK6FzKGSlnuwu1uqvK7Ar05ju","isGuest":false},"isGuest":false};
+current_search={"url":"\/tpe\/0050\/majorforce","urlTmpl":"\/tpe\/%3C%25%3Dstock_id%25%3E\/majorforce","cc":"majorforce","ca":"index"};
+tracelist={"1":{"id":"1","name":"\u6211\u95dc\u6ce8\u7684","items":["2498","2330","2409"]},"2":{"id":"2","name":"\u6211\u6301\u80a1","items":[]},"3":{"id":"3","name":"\u5176\u4ed6","items":[]},"4":{"id":"4","name":"\u7fa4\u7d444","items":[]},"5":{"id":"5","name":"\u7fa4\u7d445","items":[]}};
+stocksidemenu_js=4;
+pt_js_vars={"PtAjaxUrl":"\/ajax\/ptTracking.recordClick"};
+JS_VARS={"webRoot":"","guest":false,"vip":true,"promoUrl":"\/payment\/promo","stock":{"id":"0050","name":"\u5143\u5927\u53f0\u706350"}};
+/*]]>*/
+</script>
+</body>
+
+</html>
+
