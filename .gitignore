@@ -1,3 +1,7 @@
 tse_crawler/data/*
 tse_crawler/log/*
+nvesto_crawler/raw_data/*
+nvesto_crawler/csv_data/*
+nvesto_crawler/cookie_string.txt
+nvesto_crawler/secret_token_site/input.js
 *.sw?

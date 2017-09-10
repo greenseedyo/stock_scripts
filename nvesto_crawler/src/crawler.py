@@ -10,6 +10,8 @@ import requests
 import argparse
 import pycurl
 import json
+from random import randint
+from time import sleep
 from termcolor import colored, cprint
 from datetime import datetime, timedelta
 from subprocess import call
@@ -32,6 +34,7 @@ class Crawler():
     stock_codes = []
     major_force_json = {}
     date_picker_json = {}
+    chrome_driver = ''
     csrf = ''
 
     def __init__(self):
@@ -79,7 +82,12 @@ class Crawler():
         self._set_chrome_driver()
 
         for stock_code in self.stock_codes:
-            raw_data = self._crawl_one_target(stock_code, date)
+            print('股票代碼 {}'.format(stock_code))
+            try:
+                raw_data = self.crawl_one_target(stock_code, date)
+            except ValueError:
+                print(self.date_picker_json['dateList'])
+                sys.exit(0)
 
         self._unset_chrome_driver()
 
@@ -129,7 +137,10 @@ class Crawler():
         return page_url
 
 
-    def _crawl_one_target(self, stock_code, date):
+    def crawl_one_target(self, stock_code, date):
+        if ('' == self.chrome_driver):
+            self._set_chrome_driver()
+
         if (0 == len(self.date_picker_json)):
             page_url = self._get_page_url_by_stock_code(stock_code)
             print('Preparing date_picker_json from {}'.format(page_url))
@@ -138,6 +149,12 @@ class Crawler():
         dates_groups = self._get_trade_dates_groups(date)
 
         for period, from_date, to_date in dates_groups:
+            file_dir = self._get_raw_data_file_dir(period, stock_code)
+            file_path = '{}/{}.txt'.format(file_dir, date)
+            if os.path.isfile(file_path):
+                if os.stat(file_path).st_size:
+                    continue
+
             try:
                 raw_data = self._get_one_data_set(stock_code, from_date, to_date)
             except CrawlerCookieExpiredException:
@@ -150,14 +167,18 @@ class Crawler():
             else:
                 raise CrawlerException('未知的資料格式: {}'.format(raw_data))
 
-            file_dir = self._get_raw_data_file_dir(period, stock_code)
-            file_path = '{}/{}.txt'.format(file_dir, date)
             print('寫入資料至 {} ...'.format(file_path))
             f = open(file_path, 'w+')
             f.write(raw_data)
             f.close()
             print('寫入完成')
-        sys.exit(0)
+
+            # 等候隨機秒數再進行下一次 request
+            sleep_sec = randint(1, 5)
+            print('等候 {} 秒 ...'.format(sleep_sec))
+            sleep(sleep_sec)
+
+        #sys.exit(0)
 
 
     def _get_trade_dates_groups(self, date):
@@ -232,7 +253,8 @@ class Crawler():
         # 由 html 取得 MajorForce_JS_VARS 內容
         self._extract_major_force_json(result)
         # 由 html 取得 DATE_PICKER_JS_VARS 內容
-        self._extract_date_picker_json(result)
+        if 0 == len(self.date_picker_json):
+            self._extract_date_picker_json(result)
         # 設定 csrf
         self._extract_csrf(result)
 
@@ -461,6 +483,8 @@ def main():
         return
 
     crawler = Crawler()
+    #crawler.crawl_one_target('1312', '2017-09-07')
+    #sys.exit(0)
 
     # If back flag is on, crawl till 2014/2/11, else crawl one day
     if args.back or args.check:
