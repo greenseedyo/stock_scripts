@@ -3,7 +3,6 @@
 import os
 import re
 import sys
-import csv
 import time
 import logging
 import requests
@@ -29,6 +28,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+_dir = os.path.dirname(os.path.abspath(__file__))
+print(_dir)
+sys.path.insert(0, '{}/../../libs/src'.format(_dir))
+
+from common import Common
+
 class Crawler():
     secret_token_site = 'localhost:8000'
     stock_codes = []
@@ -41,24 +46,18 @@ class Crawler():
         ''' Make directory if not exist when initialize '''
         crawler_dir = os.path.dirname(os.path.abspath(__file__))
         self.raw_data_dir = '{}/../raw_data'.format(crawler_dir)
-        self.csv_data_dir = '{}/../csv_data'.format(crawler_dir)
         self.secret_token_site_dir = '{}/../secret_token_site'.format(crawler_dir)
         self.cookie_string_file = '{}/../cookie_string.txt'.format(crawler_dir)
         self.chrome_driver_path = '{}/../chromedriver'.format(crawler_dir)
+        self._check_raw_data_dirs_exist()
 
-        self._check_data_dirs_exist()
 
-
-    def _check_data_dirs_exist(self):
+    def _check_raw_data_dirs_exist(self):
         dirs = [
             self.raw_data_dir,
             '{}/1day'.format(self.raw_data_dir),
             '{}/5days'.format(self.raw_data_dir),
             '{}/20days'.format(self.raw_data_dir),
-            self.csv_data_dir,
-            '{}/1day'.format(self.csv_data_dir),
-            '{}/5days'.format(self.csv_data_dir),
-            '{}/20days'.format(self.csv_data_dir),
         ]
         for check_dir in dirs:
             if not isdir(check_dir):
@@ -75,7 +74,8 @@ class Crawler():
     def main_loop(self, date_tuple):
         print('Crawling {}'.format(date_tuple))
         # 取得所有股票代碼
-        self._set_stock_codes_from_tse(date_tuple)
+        common = Common()
+        self.stock_codes = common.get_stock_codes_from_tse(date_tuple)
         # 到 nvesto 爬資料
         date = '{0}-{1:02d}-{2:02d}'.format(date_tuple[0], date_tuple[1], date_tuple[2])
 
@@ -86,50 +86,13 @@ class Crawler():
             try:
                 raw_data = self.crawl_one_target(stock_code, date)
             except ValueError:
-                print(self.date_picker_json['dateList'])
-                sys.exit(0)
+                # 可能是暫停交易，先不處理
+                log = "取得資料失敗: 股票代碼 {}, 日期 {}".format(stock_code, date)
+                cprint(log, 'red')
+                logging.error(log)
+                continue
 
         self._unset_chrome_driver()
-
-
-    def _record(self, stock_code, row):
-        ''' Save row to csv file '''
-        f = open('{}/{}.csv'.format(self.data_dir, stock_code), 'a')
-        cw = csv.writer(f, lineterminator='\n')
-        cw.writerow(row)
-        f.close()
-
-
-    def _set_stock_codes_from_tse(self, date_tuple):
-        date_str = '{0}{1:02d}{2:02d}'.format(date_tuple[0], date_tuple[1], date_tuple[2])
-        url = 'http://www.twse.com.tw/exchangeReport/MI_INDEX'
-
-        query_params = {
-            'date': date_str,
-            'response': 'json',
-            'type': 'ALL',
-            '_': str(round(time.time() * 1000) - 500)
-        }
-
-        # Get json data
-        page = requests.get(url, params=query_params)
-
-        if not page.ok:
-            logging.error("Can not get TSE data at {}".format(date_str))
-            return
-
-        content = page.json()
-
-        try:
-            content['data5']
-        except KeyError:
-            return
-
-        for data in content['data5']:
-            stock_code = data[0].strip()
-            if not re.search('^\d{4}$', stock_code):
-                continue
-            self.stock_codes.append(stock_code)
 
 
     def _get_page_url_by_stock_code(self, stock_code):
