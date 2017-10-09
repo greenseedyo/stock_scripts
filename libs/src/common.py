@@ -7,10 +7,11 @@ import time
 import logging
 import requests
 import json
-from datetime import datetime, timedelta
+import datetime
 
 class Common():
-    def get_stock_codes_from_tse(self, date_tuple):
+    @staticmethod
+    def get_stock_codes_from_tse(date_tuple):
         date_str = '{0}{1:02d}{2:02d}'.format(date_tuple[0], date_tuple[1], date_tuple[2])
         url = 'http://www.twse.com.tw/exchangeReport/MI_INDEX'
 
@@ -43,6 +44,18 @@ class Common():
             stock_codes.append(stock_code)
 
         return stock_codes
+
+
+    @staticmethod
+    def is_in_future(date_obj):
+        if not date_obj.__class__.__name__ in ['date', 'datetime']:
+            raise TypeError('argument #1 needs to be an "date" or "datetime" object')
+        today = datetime.date.today().strftime("%Y-%m-%d")
+        date_string = date_obj.strftime("%Y-%m-%d")
+        if date_string > today:
+            return True
+        else:
+            return False
 
 
 if __name__ == '__main__':

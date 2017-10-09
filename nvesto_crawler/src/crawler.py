@@ -27,6 +27,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common import exceptions as SeleniumExceptions
 
 _dir = os.path.dirname(os.path.abspath(__file__))
 print(_dir)
@@ -50,6 +51,10 @@ class Crawler():
         self.cookie_string_file = '{}/../cookie_string.txt'.format(crawler_dir)
         self.chrome_driver_path = '{}/../chromedriver'.format(crawler_dir)
         self._check_raw_data_dirs_exist()
+
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self._unset_chrome_driver()
 
 
     def _check_raw_data_dirs_exist(self):
@@ -79,7 +84,8 @@ class Crawler():
         # 到 nvesto 爬資料
         date = '{0}-{1:02d}-{2:02d}'.format(date_tuple[0], date_tuple[1], date_tuple[2])
 
-        self._set_chrome_driver()
+        if ('' == self.chrome_driver):
+            self._set_chrome_driver()
 
         for stock_code in self.stock_codes:
             print('股票代碼 {}'.format(stock_code))
@@ -91,8 +97,6 @@ class Crawler():
                 cprint(log, 'red')
                 logging.error(log)
                 continue
-
-        self._unset_chrome_driver()
 
 
     def _get_page_url_by_stock_code(self, stock_code):
@@ -124,6 +128,8 @@ class Crawler():
                 cprint('Cookie expired, refreshing cookie...', 'yellow')
                 self.refresh_cookie()
                 raw_data = self._get_one_data_set(stock_code, from_date, to_date)
+            except SeleniumExceptions.TimeoutException:
+                cprint('請確認 web server 是否正常運作', 'red')
 
             if ('true' == raw_data[8:12]):
                 cprint('成功取得資料: {} 至 {} ({})'.format(from_date, to_date, period), 'green')
@@ -350,7 +356,7 @@ class Crawler():
     def refresh_cookie(self):
         cookie_dicts = self._get_cookie_dicts_from_file()
         driver = self._get_chrome_driver()
-        driver.get("https://www.nvesto.com/tpe/stockalert")
+        driver.get("https://www.nvesto.com/")
         for cookie_dict in cookie_dicts:
             driver.add_cookie(cookie_dict)
         driver.refresh()

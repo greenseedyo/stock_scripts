@@ -4,11 +4,6 @@
 from __future__ import print_function
 import sys
 import os.path
-from elasticsearch import Elasticsearch
-
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 
 class Retriever:
     line_pool = {}
@@ -17,7 +12,6 @@ class Retriever:
     data_dir = '/Users/yo/stock/stock_scripts/tse_crawler/data'
 
     def __init__(self, stock_codes=[]):
-        self.es = Elasticsearch(timeout=30)
         self.stock_codes = stock_codes
 
     def set_stock_codes(self, stock_codes):
@@ -34,9 +28,11 @@ class Retriever:
                 raise RetrieverException('{} is not a file'.format(filename))
         for stock_code in stock_codes:
             line_number = 0
-            for line_raw in open(filename):
+            f = open(filename)
+            for line_raw in f:
                 line_number += 1
                 yield stock_code, line_number, line_raw
+            f.close()
 
     def save_line(self, stock_code, line_number, line_raw):
         line = line_raw.strip()
@@ -63,7 +59,9 @@ class Retriever:
             for i, line_raw in enumerate(fp):
                 if i == (line_number - 1):
                     self.save_line(stock_code, line_number, line_raw)
-                    return self.line_pool[stock_code][line_number]
+                    break
+            fp.close()
+            return self.line_pool[stock_code][line_number]
 
     def get_previous_valid_lines(self, stock_code, line_number, max_size):
         # get from pool if it has
@@ -246,12 +244,15 @@ class Retriever:
 
     def search_line_number_by_date(self, stock_code, date):
         filename = self.get_filename_by_stock_code(stock_code)
-        for i, line_raw in enumerate(open(filename)):
+        f = open(filename)
+        for i, line_raw in enumerate(f):
             line = line_raw.strip()
             if -1 != line.find(date):
                 line_number = i + 1
                 self.save_line(stock_code, line_number, line)
-                return line_number
+                break
+        f.close()
+        return line_number
 
     def get_simulation_1_info(self,
                               stock_code, pick_date,

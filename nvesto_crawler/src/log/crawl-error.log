@@ -1,0 +1,482 @@
+2017/09/12 10:34:42	[ERROR]	Crawl raise error 2017/09/12: 'NoneType' object is not iterable
+2017/09/12 10:34:53	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/12 10:34:55	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/12 14:40:13	[ERROR]	Crawl raise error 2017/09/05: (28, 'Operation timed out after 0 milliseconds with 0 out of 0 bytes received')
+2017/09/12 18:33:21	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/12 18:33:23	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/13 02:03:19	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/13 02:03:21	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/13 05:04:04	[ERROR]	Crawl raise error 2017/09/05: (28, 'Operation timed out after 10002 milliseconds with 0 bytes received')
+2017/09/13 05:04:13	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/13 05:04:15	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/13 10:19:17	[ERROR]	Crawl raise error 2017/09/13: 'NoneType' object is not iterable
+2017/09/13 10:19:30	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/13 10:19:33	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/13 10:20:01	[ERROR]	Crawl raise error 2017/09/05: Message: 
+
+2017/09/13 10:20:08	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/13 10:20:10	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/13 10:20:26	[ERROR]	Crawl raise error 2017/09/01: Message: 
+
+2017/09/13 10:20:41	[ERROR]	Crawl raise error 2017/08/31: Message: 
+
+2017/09/13 10:20:56	[ERROR]	Crawl raise error 2017/08/30: Message: 
+
+2017/09/16 03:22:49	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/16 15:12:03	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/16 15:12:06	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/16 15:52:17	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/16 15:52:19	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/16 22:01:10	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/16 22:01:33	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/16 22:01:35	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/16 22:01:57	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/16 22:01:59	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/17 00:54:35	[ERROR]	Crawl raise error 2017/08/30: 'NoneType' object has no attribute 'group'
+2017/09/17 03:51:05	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/17 03:51:07	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/17 03:54:30	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/17 03:54:32	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/17 03:55:22	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/17 03:55:22	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/17 03:55:32	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/17 03:55:32	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/17 03:55:40	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/17 03:55:40	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/17 04:49:38	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/17 04:49:39	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/17 04:49:48	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/17 04:49:48	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/17 04:49:55	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/17 04:49:55	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/17 05:48:59	[ERROR]	Crawl raise error 2017/08/29: 未知的資料格式: <h1>CDbException</h1>
+<p>CDbConnection failed to open the DB connection.</p>
+2017/09/17 05:49:02	[ERROR]	Crawl raise error 2017/08/28: 'NoneType' object has no attribute 'group'
+2017/09/17 05:49:02	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/17 05:49:02	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/18 01:04:48	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/18 01:04:48	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/18 20:22:43	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/18 20:22:44	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/19 15:48:02	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/19 15:48:02	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/20 10:44:26	[ERROR]	Crawl raise error 2017/07/31: (18, 'transfer closed with outstanding read data remaining')
+2017/09/20 10:44:26	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/20 10:44:26	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/20 11:12:46	[ERROR]	Crawl raise error 2017/07/28: 'NoneType' object has no attribute 'group'
+2017/09/20 12:56:15	[ERROR]	Crawl raise error 2017/07/27: 'NoneType' object has no attribute 'group'
+2017/09/20 22:15:38	[ERROR]	Crawl raise error 2017/09/20: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3220.0)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.10.5 x86_64)
+
+2017/09/20 22:15:41	[ERROR]	Crawl raise error 2017/09/19: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3220.0)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.10.5 x86_64)
+
+2017/09/20 22:15:44	[ERROR]	Crawl raise error 2017/09/18: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3220.0)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.10.5 x86_64)
+
+2017/09/20 22:15:44	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/20 22:15:44	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/20 22:16:26	[ERROR]	Crawl raise error 2017/09/20: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3220.0)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.10.5 x86_64)
+
+2017/09/20 22:18:46	[ERROR]	Crawl raise error 2017/09/20: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3220.0)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.10.5 x86_64)
+
+2017/09/20 22:18:50	[ERROR]	Crawl raise error 2017/09/19: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3220.0)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.10.5 x86_64)
+
+2017/09/20 22:18:53	[ERROR]	Crawl raise error 2017/09/18: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3220.0)
+  (Driver info: chromedriver=2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061),platform=Mac OS X 10.10.5 x86_64)
+
+2017/09/20 22:18:53	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/20 22:18:53	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/21 10:19:01	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/21 10:19:01	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/21 10:19:08	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/21 10:19:08	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/21 10:19:14	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/21 10:19:14	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/21 11:28:40	[ERROR]	Crawl raise error 2017/08/28: (6, 'Could not resolve host: www.nvesto.com')
+2017/09/21 11:28:40	[ERROR]	Crawl raise error 2017/08/27: HTTPConnectionPool(host='www.twse.com.tw', port=80): Max retries exceeded with url: /exchangeReport/MI_INDEX?date=20170827&response=json&type=ALL&_=1505964520421 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a2e9ac8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2017/09/21 11:28:40	[ERROR]	Crawl raise error 2017/08/26: HTTPConnectionPool(host='www.twse.com.tw', port=80): Max retries exceeded with url: /exchangeReport/MI_INDEX?date=20170826&response=json&type=ALL&_=1505964520439 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a2e9e80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2017/09/21 11:28:40	[ERROR]	Crawl raise error 2017/08/25: HTTPConnectionPool(host='www.twse.com.tw', port=80): Max retries exceeded with url: /exchangeReport/MI_INDEX?date=20170825&response=json&type=ALL&_=1505964520443 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a2e99e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2017/09/21 11:28:40	[ERROR]	Crawl raise error 2017/08/24: HTTPConnectionPool(host='www.twse.com.tw', port=80): Max retries exceeded with url: /exchangeReport/MI_INDEX?date=20170824&response=json&type=ALL&_=1505964520447 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a2e9908>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2017/09/21 13:15:20	[ERROR]	Crawl raise error 2017/09/21: 'NoneType' object is not iterable
+2017/09/21 13:15:27	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/21 13:15:27	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/21 13:15:33	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/21 13:15:33	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/21 13:15:38	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/21 13:15:38	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/21 16:52:47	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/21 16:52:47	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/21 16:52:53	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/21 16:52:53	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/21 16:52:58	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/21 16:52:58	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/21 16:53:04	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/21 16:53:04	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/21 17:23:46	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/21 17:23:46	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/21 17:42:42	[ERROR]	Crawl raise error 2017/07/28: (28, 'Operation timed out after 10006 milliseconds with 0 bytes received')
+2017/09/22 07:46:31	[ERROR]	Crawl raise error 2017/07/23: 'NoneType' object is not iterable
+2017/09/22 07:46:31	[ERROR]	Crawl raise error 2017/07/22: 'NoneType' object is not iterable
+2017/09/22 08:35:33	[ERROR]	Crawl raise error 2017/07/21: 'NoneType' object has no attribute 'group'
+2017/09/22 08:35:34	[ERROR]	Crawl raise error 2017/07/20: 'NoneType' object has no attribute 'group'
+2017/09/22 08:35:35	[ERROR]	Crawl raise error 2017/07/19: 'NoneType' object has no attribute 'group'
+2017/09/22 12:36:15	[ERROR]	Crawl raise error 2017/09/22: 'NoneType' object is not iterable
+2017/09/22 16:28:18	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/22 16:28:18	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/22 16:28:25	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/22 16:28:25	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/22 16:28:31	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/22 16:28:31	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/22 16:28:37	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/22 16:28:37	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/22 16:28:44	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/22 16:28:44	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/22 16:28:50	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/22 16:28:50	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/22 16:28:56	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/22 16:28:56	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/22 16:29:02	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/22 16:29:02	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/22 19:36:40	[ERROR]	Crawl raise error 2017/07/23: 'NoneType' object is not iterable
+2017/09/22 19:36:41	[ERROR]	Crawl raise error 2017/07/22: 'NoneType' object is not iterable
+2017/09/23 13:53:37	[ERROR]	Crawl raise error 2017/07/17: (28, 'Connection timed out after 10010 milliseconds')
+2017/09/23 13:53:37	[ERROR]	Crawl raise error 2017/07/16: 'NoneType' object is not iterable
+2017/09/23 13:53:37	[ERROR]	Crawl raise error 2017/07/15: 'NoneType' object is not iterable
+2017/09/24 09:19:53	[ERROR]	Crawl raise error 2017/07/09: 'NoneType' object is not iterable
+2017/09/24 09:19:53	[ERROR]	Crawl raise error 2017/07/08: 'NoneType' object is not iterable
+2017/09/24 20:56:40	[ERROR]	Crawl raise error 2017/07/05: (28, 'Operation timed out after 10000 milliseconds with 0 bytes received')
+2017/09/25 02:31:52	[ERROR]	Crawl raise error 2017/09/25: 'NoneType' object is not iterable
+2017/09/25 02:31:52	[ERROR]	Crawl raise error 2017/09/24: 'NoneType' object is not iterable
+2017/09/25 02:31:52	[ERROR]	Crawl raise error 2017/09/23: 'NoneType' object is not iterable
+2017/09/25 02:32:29	[ERROR]	Crawl raise error 2017/09/25: 'NoneType' object is not iterable
+2017/09/25 02:32:29	[ERROR]	Crawl raise error 2017/09/24: 'NoneType' object is not iterable
+2017/09/25 02:32:29	[ERROR]	Crawl raise error 2017/09/23: 'NoneType' object is not iterable
+2017/09/25 06:26:02	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/25 06:26:03	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/25 06:26:10	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/25 06:26:10	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/25 06:26:16	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/25 06:26:16	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/25 06:26:22	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/25 06:26:22	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/25 06:26:28	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/25 06:26:28	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/25 06:26:33	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/25 06:26:33	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/25 06:26:40	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/25 06:26:40	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/25 06:26:46	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/25 06:26:46	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/25 06:26:52	[ERROR]	Crawl raise error 2017/07/23: 'NoneType' object is not iterable
+2017/09/25 06:26:52	[ERROR]	Crawl raise error 2017/07/22: 'NoneType' object is not iterable
+2017/09/25 07:10:18	[ERROR]	Crawl raise error 2017/07/16: 'NoneType' object is not iterable
+2017/09/25 07:10:18	[ERROR]	Crawl raise error 2017/07/15: 'NoneType' object is not iterable
+2017/09/25 07:10:24	[ERROR]	Crawl raise error 2017/07/09: 'NoneType' object is not iterable
+2017/09/25 07:10:24	[ERROR]	Crawl raise error 2017/07/08: 'NoneType' object is not iterable
+2017/09/25 07:54:36	[ERROR]	Crawl raise error 2017/07/04: (28, 'Operation timed out after 10004 milliseconds with 15012 bytes received')
+2017/09/25 09:06:23	[ERROR]	Crawl raise error 2017/07/03: (28, 'Operation timed out after 10005 milliseconds with 26491 bytes received')
+2017/09/25 09:06:23	[ERROR]	Crawl raise error 2017/07/02: 'NoneType' object is not iterable
+2017/09/25 09:06:24	[ERROR]	Crawl raise error 2017/07/01: 'NoneType' object is not iterable
+2017/09/25 09:13:58	[ERROR]	Crawl raise error 2017/06/30: (28, 'Operation timed out after 10000 milliseconds with 15012 bytes received')
+2017/09/25 10:03:43	[ERROR]	Crawl raise error 2017/09/25: 'NoneType' object is not iterable
+2017/09/25 10:03:43	[ERROR]	Crawl raise error 2017/09/24: 'NoneType' object is not iterable
+2017/09/25 10:03:43	[ERROR]	Crawl raise error 2017/09/23: 'NoneType' object is not iterable
+2017/09/25 10:03:51	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/25 10:03:51	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/25 10:03:57	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/25 10:03:57	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/25 10:04:05	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/25 10:04:05	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/25 10:04:15	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/25 10:04:15	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/25 10:04:22	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/25 10:04:23	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/25 10:04:31	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/25 10:04:31	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/25 10:04:43	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/25 10:04:43	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/25 10:04:50	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/25 10:04:50	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/25 10:04:58	[ERROR]	Crawl raise error 2017/07/23: 'NoneType' object is not iterable
+2017/09/25 10:04:58	[ERROR]	Crawl raise error 2017/07/22: 'NoneType' object is not iterable
+2017/09/25 10:05:07	[ERROR]	Crawl raise error 2017/07/16: 'NoneType' object is not iterable
+2017/09/25 10:05:07	[ERROR]	Crawl raise error 2017/07/15: 'NoneType' object is not iterable
+2017/09/25 10:05:15	[ERROR]	Crawl raise error 2017/07/09: 'NoneType' object is not iterable
+2017/09/25 10:05:16	[ERROR]	Crawl raise error 2017/07/08: 'NoneType' object is not iterable
+2017/09/25 10:08:02	[ERROR]	Crawl raise error 2017/07/04: Message: <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2016 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2016 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="http://127.0.0.1:56765/session/af5217c209270b952096870fb4a8169a/url">http://127.0.0.1:56765/session/af5217c209270b952096870fb4a8169a/url</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:root?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20office.verybuy.tw%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Mon,%2025%20Sep%202017%2002%3A08%3A02%20GMT%0D%0A%0D%0AClientIP%3A%20192.168.100.100%0D%0A%0D%0AHTTP%20Request%3A%0D%0APOST%20%2Fsession%2Faf5217c209270b952096870fb4a8169a%2Furl%20HTTP%2F1.1%0AAccept-Encoding%3A%20identity%0D%0AContent-Length%3A%2092%0D%0AUser-Agent%3A%20Python%20http%20auth%0D%0AContent-Type%3A%20application%2Fjson%3Bcharset%3DUTF-8%0D%0AAccept%3A%20application%2Fjson%0D%0AVia%3A%201.1%20office.verybuy.tw%20(squid%2F3.5.20)%0D%0AX-Forwarded-For%3A%20192.168.100.2%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AConnection%3A%20keep-alive%0D%0AHost%3A%20127.0.0.1%3A56765%0D%0A%0D%0A%0D%0A">root</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Mon, 25 Sep 2017 02:08:02 GMT by office.verybuy.tw (squid/3.5.20)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+
+2017/09/25 10:08:02	[ERROR]	Can not get TSE data at 20170703
+2017/09/25 10:08:02	[ERROR]	Crawl raise error 2017/07/03: 'NoneType' object is not iterable
+2017/09/25 10:08:02	[ERROR]	Can not get TSE data at 20170702
+2017/09/25 10:08:02	[ERROR]	Crawl raise error 2017/07/02: 'NoneType' object is not iterable
+2017/09/25 10:08:02	[ERROR]	Can not get TSE data at 20170701
+2017/09/25 10:08:02	[ERROR]	Crawl raise error 2017/07/01: 'NoneType' object is not iterable
+2017/09/25 10:08:03	[ERROR]	Can not get TSE data at 20170630
+2017/09/25 10:08:03	[ERROR]	Crawl raise error 2017/06/30: 'NoneType' object is not iterable
+2017/09/25 10:33:20	[ERROR]	Crawl raise error 2017/09/25: 'NoneType' object is not iterable
+2017/09/25 10:33:20	[ERROR]	Crawl raise error 2017/09/24: 'NoneType' object is not iterable
+2017/09/25 10:33:21	[ERROR]	Crawl raise error 2017/09/23: 'NoneType' object is not iterable
+2017/09/25 10:33:43	[ERROR]	Crawl raise error 2017/09/25: 'NoneType' object is not iterable
+2017/09/25 10:33:43	[ERROR]	Crawl raise error 2017/09/24: 'NoneType' object is not iterable
+2017/09/25 10:33:43	[ERROR]	Crawl raise error 2017/09/23: 'NoneType' object is not iterable
+2017/09/25 10:33:54	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/25 10:33:54	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/25 10:34:03	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/25 10:34:03	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/25 10:34:10	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/25 10:34:10	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/25 10:34:16	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/25 10:34:16	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/25 10:34:22	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/25 10:34:22	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/25 10:34:28	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/25 10:34:28	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/25 10:34:34	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/25 10:34:34	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/25 10:34:40	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/25 10:34:40	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/25 10:34:47	[ERROR]	Crawl raise error 2017/07/23: 'NoneType' object is not iterable
+2017/09/25 10:34:47	[ERROR]	Crawl raise error 2017/07/22: 'NoneType' object is not iterable
+2017/09/25 10:34:53	[ERROR]	Crawl raise error 2017/07/16: 'NoneType' object is not iterable
+2017/09/25 10:34:54	[ERROR]	Crawl raise error 2017/07/15: 'NoneType' object is not iterable
+2017/09/25 10:35:00	[ERROR]	Crawl raise error 2017/07/09: 'NoneType' object is not iterable
+2017/09/25 10:35:00	[ERROR]	Crawl raise error 2017/07/08: 'NoneType' object is not iterable
+2017/09/25 10:38:19	[ERROR]	Crawl raise error 2017/09/25: 'NoneType' object is not iterable
+2017/09/25 10:38:19	[ERROR]	Crawl raise error 2017/09/24: 'NoneType' object is not iterable
+2017/09/25 10:38:19	[ERROR]	Crawl raise error 2017/09/23: 'NoneType' object is not iterable
+2017/09/25 10:38:28	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/25 10:38:28	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/25 10:38:35	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/25 10:38:35	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/25 10:38:41	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/25 10:38:41	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/25 10:38:47	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/25 10:38:47	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/25 10:38:54	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/25 10:38:54	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/25 10:39:00	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/25 10:39:00	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/25 10:39:07	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/25 10:39:07	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/25 10:39:14	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/25 10:39:14	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/25 10:39:22	[ERROR]	Crawl raise error 2017/07/23: 'NoneType' object is not iterable
+2017/09/25 10:39:22	[ERROR]	Crawl raise error 2017/07/22: 'NoneType' object is not iterable
+2017/09/25 10:39:30	[ERROR]	Crawl raise error 2017/07/16: 'NoneType' object is not iterable
+2017/09/25 10:39:30	[ERROR]	Crawl raise error 2017/07/15: 'NoneType' object is not iterable
+2017/09/25 10:39:37	[ERROR]	Crawl raise error 2017/07/09: 'NoneType' object is not iterable
+2017/09/25 10:39:37	[ERROR]	Crawl raise error 2017/07/08: 'NoneType' object is not iterable
+2017/09/25 14:31:25	[ERROR]	Crawl raise error 2017/07/02: 'NoneType' object is not iterable
+2017/09/25 14:31:25	[ERROR]	Crawl raise error 2017/07/01: 'NoneType' object is not iterable
+2017/09/26 09:38:52	[ERROR]	Crawl raise error 2017/06/26: (28, 'Operation timed out after 10002 milliseconds with 0 bytes received')
+2017/09/26 09:38:53	[ERROR]	Crawl raise error 2017/06/25: 'NoneType' object is not iterable
+2017/09/26 09:38:53	[ERROR]	Crawl raise error 2017/06/24: 'NoneType' object is not iterable
+2017/09/27 05:23:57	[ERROR]	Crawl raise error 2017/06/18: 'NoneType' object is not iterable
+2017/09/27 05:23:57	[ERROR]	Crawl raise error 2017/06/17: 'NoneType' object is not iterable
+2017/09/28 00:58:29	[ERROR]	Crawl raise error 2017/06/11: 'NoneType' object is not iterable
+2017/09/28 00:58:29	[ERROR]	Crawl raise error 2017/06/10: 'NoneType' object is not iterable
+2017/09/28 15:32:53	[ERROR]	Crawl raise error 2017/06/06: (28, 'Operation timed out after 10003 milliseconds with 0 bytes received')
+2017/09/28 15:33:04	[ERROR]	Crawl raise error 2017/06/05: (28, 'Operation timed out after 10003 milliseconds with 0 bytes received')
+2017/09/28 15:33:04	[ERROR]	Crawl raise error 2017/06/04: 'NoneType' object is not iterable
+2017/09/28 15:33:06	[ERROR]	Crawl raise error 2017/06/03: 'NoneType' object has no attribute 'group'
+2017/09/28 15:33:07	[ERROR]	Crawl raise error 2017/06/02: 'NoneType' object has no attribute 'group'
+2017/09/29 12:17:42	[ERROR]	Crawl raise error 2017/09/29: 'NoneType' object is not iterable
+2017/09/30 03:57:36	[ERROR]	Crawl raise error 2017/09/24: 'NoneType' object is not iterable
+2017/09/30 03:57:36	[ERROR]	Crawl raise error 2017/09/23: 'NoneType' object is not iterable
+2017/09/30 03:57:43	[ERROR]	Crawl raise error 2017/09/17: 'NoneType' object is not iterable
+2017/09/30 03:57:43	[ERROR]	Crawl raise error 2017/09/16: 'NoneType' object is not iterable
+2017/09/30 03:57:50	[ERROR]	Crawl raise error 2017/09/10: 'NoneType' object is not iterable
+2017/09/30 03:57:50	[ERROR]	Crawl raise error 2017/09/09: 'NoneType' object is not iterable
+2017/09/30 03:57:56	[ERROR]	Crawl raise error 2017/09/03: 'NoneType' object is not iterable
+2017/09/30 03:57:56	[ERROR]	Crawl raise error 2017/09/02: 'NoneType' object is not iterable
+2017/09/30 03:58:03	[ERROR]	Crawl raise error 2017/08/27: 'NoneType' object is not iterable
+2017/09/30 03:58:03	[ERROR]	Crawl raise error 2017/08/26: 'NoneType' object is not iterable
+2017/09/30 03:58:10	[ERROR]	Crawl raise error 2017/08/20: 'NoneType' object is not iterable
+2017/09/30 03:58:10	[ERROR]	Crawl raise error 2017/08/19: 'NoneType' object is not iterable
+2017/09/30 03:58:16	[ERROR]	Crawl raise error 2017/08/13: 'NoneType' object is not iterable
+2017/09/30 03:58:16	[ERROR]	Crawl raise error 2017/08/12: 'NoneType' object is not iterable
+2017/09/30 03:58:22	[ERROR]	Crawl raise error 2017/08/06: 'NoneType' object is not iterable
+2017/09/30 03:58:22	[ERROR]	Crawl raise error 2017/08/05: 'NoneType' object is not iterable
+2017/09/30 03:58:28	[ERROR]	Crawl raise error 2017/07/30: 'NoneType' object is not iterable
+2017/09/30 03:58:28	[ERROR]	Crawl raise error 2017/07/29: 'NoneType' object is not iterable
+2017/09/30 03:58:35	[ERROR]	Crawl raise error 2017/07/23: 'NoneType' object is not iterable
+2017/09/30 03:58:35	[ERROR]	Crawl raise error 2017/07/22: 'NoneType' object is not iterable
+2017/09/30 03:58:41	[ERROR]	Crawl raise error 2017/07/16: 'NoneType' object is not iterable
+2017/09/30 03:58:41	[ERROR]	Crawl raise error 2017/07/15: 'NoneType' object is not iterable
+2017/09/30 03:58:47	[ERROR]	Crawl raise error 2017/07/09: 'NoneType' object is not iterable
+2017/09/30 03:58:47	[ERROR]	Crawl raise error 2017/07/08: 'NoneType' object is not iterable
+2017/09/30 03:58:53	[ERROR]	Crawl raise error 2017/07/02: 'NoneType' object is not iterable
+2017/09/30 03:58:53	[ERROR]	Crawl raise error 2017/07/01: 'NoneType' object is not iterable
+2017/09/30 04:26:31	[ERROR]	Crawl raise error 2017/06/25: 'NoneType' object is not iterable
+2017/09/30 04:26:31	[ERROR]	Crawl raise error 2017/06/24: 'NoneType' object is not iterable
+2017/09/30 04:26:37	[ERROR]	Crawl raise error 2017/06/18: 'NoneType' object is not iterable
+2017/09/30 04:26:37	[ERROR]	Crawl raise error 2017/06/17: 'NoneType' object is not iterable
+2017/09/30 04:26:43	[ERROR]	Crawl raise error 2017/06/11: 'NoneType' object is not iterable
+2017/09/30 04:26:43	[ERROR]	Crawl raise error 2017/06/10: 'NoneType' object is not iterable
+2017/09/30 04:49:13	[ERROR]	Crawl raise error 2017/06/06: (28, 'Operation timed out after 10000 milliseconds with 0 bytes received')
+2017/09/30 08:44:28	[ERROR]	Crawl raise error 2017/06/04: 'NoneType' object is not iterable
+2017/09/30 16:16:48	[ERROR]	Crawl raise error 2017/06/02: (28, 'Operation timed out after 10004 milliseconds with 0 bytes received')
+2017/09/30 16:16:50	[ERROR]	Crawl raise error 2017/06/01: 'NoneType' object has no attribute 'group'
+2017/09/30 16:16:51	[ERROR]	Crawl raise error 2017/05/31: 'NoneType' object has no attribute 'group'
+2017/09/30 16:16:51	[ERROR]	Crawl raise error 2017/05/30: 'NoneType' object is not iterable
+2017/09/30 16:16:51	[ERROR]	Crawl raise error 2017/05/29: 'NoneType' object is not iterable

@@ -13,9 +13,6 @@ from datetime import datetime, timedelta
 from os import mkdir
 from os.path import isdir
 
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 class Crawler():
     crawler_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -67,7 +64,7 @@ class Crawler():
             return
 
         for data in content['data5']:
-            if not re.search('^\d{4}\.csv$', data[0].strip()):
+            if not re.search('^\d{4}$', data[0].strip()):
                 continue
             sign = '-' if data[9].find('green') > 0 else ''
             row = self._clean_row([
