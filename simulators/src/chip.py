@@ -27,6 +27,7 @@ class Chip():
         self._dir = os.path.dirname(os.path.abspath(__file__))
         self.chip_raw_data_dir = '{}/../../nvesto_crawler/raw_data'.format(self._dir)
         self.tech_data_dir = '{}/../../tse_crawler/data'.format(self._dir)
+        self.sim_count = kwargs.pop('sim_count', 100)
         self.hold_max_days = kwargs.pop('hold_max_days', 14)
         self.stop_loss_factor = kwargs.pop('stop_loss_factor', 0.9)
         self.set_bank(Bank())
@@ -57,10 +58,9 @@ class Chip():
     def simulate_one(self, stock_code, first_date_obj):
         i = 0
         counter = 0
-        data_sets = {}
-        volumes = {}
+        data_sets = []
         has_bought = False
-        while counter < self.hold_max_days:
+        while counter < self.sim_count:
             date_obj = first_date_obj + datetime.timedelta(i)
             date_string = date_obj.strftime("%Y-%m-%d")
             print(stock_code, date_obj.year, date_obj.month, date_obj.day)
@@ -73,22 +73,41 @@ class Chip():
             if one_day_data is None:
                 continue
 
-            data_sets[counter] = one_day_data
+            data_sets.append(one_day_data)
 
-            # 是否達進場條件
+            # 是否達買進條件
             if not has_bought:
                 if self.rule.check_buying_criteria(data_sets):
-                    self.bank.buy(stock_code, date_obj, quantity)
+                    self.bank.margin_buy(stock_code, date_obj, quantity)
 
-            # 是否達加碼條件
+            # 是否達加碼買進條件
             if has_bought:
                 if self.rule.check_buying_more_criteria(data_sets):
-                    self.bank.buy(stock_code, date_obj, quantity)
+                    self.bank.margin_buy(stock_code, date_obj, quantity)
 
-            # 是否達出場條件
+            # 是否達賣出條件
             if has_bought:
                 if self.rule.check_selling_criteria(data_sets):
-                    self.bank.sell(stock_code, date_obj)
+                    self.bank.margin_sell(stock_code, date_obj, quantity)
+
+            # 是否達放空條件
+            if not has_bought:
+                if self.rule.check_shorting_criteria(data_sets):
+                    print('符合放空條件: {} - {}'.format(stock_code, date_string))
+                    quantity = 1
+                    self.bank.short_sell(stock_code, date_obj, quantity)
+
+            # 是否達加碼放空條件
+            if has_bought:
+                if self.rule.check_shorting_more_criteria(data_sets):
+                    quantity = 1
+                    self.bank.short_sell(stock_code, date_obj, quantity)
+
+            # 是否達回補條件
+            if has_bought:
+                if self.rule.check_covering_criteria(data_sets):
+                    quantity = 1
+                    self.bank.short_cover(stock_code, date_obj, quantity)
 
             counter += 1
 
@@ -109,12 +128,14 @@ class Chip():
         volume_20days = math.floor(self._get_volume(stock_code, date_obj, 20) / 1000)
         con_5 = round(major_force_net['5days'] / volume_5days * 100, 2)
         con_20 = round(major_force_net['20days'] / volume_20days * 100, 2)
+        closing_price = self._get_closing_price(stock_code, date_obj)
         ma_60 = self._get_ma_60(stock_code, date_obj)
 
         data = {
             'major_force_net': major_force_net['1day'],
             'concentration_5days': con_5,
             'concentration_20days': con_20,
+            'closing_price': closing_price,
             'ma_60': ma_60,
         }
         return data
@@ -147,6 +168,16 @@ class Chip():
             total_volume += volume
         return total_volume
 
+    def _get_closing_price(self, stock_code, date_obj):
+        roc_date_string = RocDateConverter().get_roc_date_by_datetime(date_obj)
+        retriever = TechRetriever()
+        line_number = retriever.search_line_number_by_date(stock_code, roc_date_string)
+        if line_number is None:
+            raise ChipException('{} 找不到 {} 的資料'.format(stock_code, roc_date_string))
+        line = retriever.get_line_by_number(stock_code, line_number)
+        closing_price = float(retriever.get_line_data_dict(line)['closing_price'])
+        return closing_price
+
     def _get_ma_60(self, stock_code, date_obj):
         ma = MA().calculate(stock_code, date_obj, 60)
         return ma
@@ -172,8 +203,8 @@ class ChipException(Exception):
 def main():
     # 模擬開始日
     from_date = '2017-09-01'
-    # 模擬進場次數
-    sim_count = 10
+    # 模擬交易日數
+    sim_count = 100
     # 單支股票持股交易日上限
     hold_max_days = 14
     # 停損設定
@@ -181,35 +212,21 @@ def main():
 
     rule = Rule()
 
-    buying_criteria = DecreasingChip1()
-    rule.set_buying_criteria(buying_criteria)
+    shorting_criteria = DecreasingChip1()
+    rule.set_shorting_criteria(shorting_criteria)
 
-    buying_more_criteria = DecreasingChip1()
-    rule.set_buying_more_criteria(buying_more_criteria)
+    shorting_more_criteria = DecreasingChip1()
+    rule.set_shorting_more_criteria(shorting_more_criteria)
 
-    selling_criteria = DecreasingChip1()
-    rule.set_selling_criteria(selling_criteria)
+    covering_criteria = StopDecreasingChip1()
+    rule.set_covering_criteria(covering_criteria)
 
-    simulator = Chip(rule, hold_max_days=hold_max_days, stop_loss_factor=stop_loss_factor)
+    simulator = Chip(rule, sim_count=sim_count, hold_max_days=hold_max_days, stop_loss_factor=stop_loss_factor)
 
     from_date_obj = datetime.datetime.strptime(from_date, "%Y-%m-%d")
-    i = 0
-    counter = 0
-    while counter < sim_count:
-        first_date_obj = from_date_obj + datetime.timedelta(i)
-        i += 1
-        if Common.is_in_future(first_date_obj):
-            break
+    first_date_obj = from_date_obj + datetime.timedelta(i)
 
-        result = simulator.simulate_all(first_date_obj)
-        if None == result:
-            continue
-
-        counter += 1
-
-    if 0 == counter:
-        print('無結果')
-        sys.exit(0)
+    result = simulator.simulate_all(first_date_obj)
 
 
 if __name__ == '__main__':

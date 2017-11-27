@@ -21,7 +21,7 @@ class Bank():
     def __init__(self):
         self._dir = os.path.dirname(os.path.abspath(__file__))
         self.tse_data_dir = '{}/../../tse_crawler/data'.format(self._dir)
-        self.inv = Inventory()
+        self.inventory = Inventory()
 
     def normal_buy(self, stock_code, date_obj, quantity):
         self.inventory.store('normal', stock_code, date_obj, quantity)
@@ -36,10 +36,10 @@ class Bank():
         self.inventory.out('margin', stock_code, date_obj, quantity)
 
     def short_sell(self, stock_code, date_obj, quantity):
-        self.inventory.out('short', stock_code, date_obj, quantity)
-
-    def short_buy(self, stock_code, date_obj, quantity):
         self.inventory.store('short', stock_code, date_obj, quantity)
+
+    def short_cover(self, stock_code, date_obj, quantity):
+        self.inventory.out('short', stock_code, date_obj, quantity)
 
     def get_accounting(self, stock_code):
         pass

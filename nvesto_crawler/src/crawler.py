@@ -81,6 +81,8 @@ class Crawler():
         # 取得所有股票代碼
         common = Common()
         self.stock_codes = common.get_stock_codes_from_tse(date_tuple)
+        if self.stock_codes is None:
+            return
         # 到 nvesto 爬資料
         date = '{0}-{1:02d}-{2:02d}'.format(date_tuple[0], date_tuple[1], date_tuple[2])
 
@@ -120,6 +122,7 @@ class Crawler():
             file_path = '{}/{}.txt'.format(file_dir, date)
             if os.path.isfile(file_path):
                 if os.stat(file_path).st_size:
+                    cprint('{} 不存在'.format(file_path), 'red')
                     continue
 
             try:
@@ -199,6 +202,9 @@ class Crawler():
         ajax_data_url = 'https://www.nvesto.com{}'.format(self._get_ajax_data_url())
         body = self._get_html(ajax_data_url, pycurl_options)
         result = body.decode('utf-8')
+        result_json = json.loads(result)
+        if 'Please login' == result_json['errMsg']:
+            raise CrawlerCookieExpiredException('請重新登入')
         if '{"errMsg":"403","succ":false}' == result:
             raise CrawlerCookieExpiredException('cookie 已過期，請更新 cookie_string.txt')
         return result

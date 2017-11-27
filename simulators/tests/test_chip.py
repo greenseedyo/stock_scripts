@@ -19,14 +19,14 @@ class TestChip(unittest.TestCase):
     def _set_test_rule(self):
         rule = Rule()
 
-        buying_criteria = DecreasingChip1()
-        rule.set_buying_criteria(buying_criteria)
+        shorting_criteria = DecreasingChip1()
+        rule.set_shorting_criteria(shorting_criteria)
 
-        buying_more_criteria = DecreasingChip1()
-        rule.set_buying_more_criteria(buying_more_criteria)
+        shorting_more_criteria = DecreasingChip1()
+        rule.set_shorting_more_criteria(shorting_more_criteria)
 
-        selling_criteria = DecreasingChip1()
-        rule.set_selling_criteria(selling_criteria)
+        covering_criteria = StopDecreasingChip1()
+        rule.set_covering_criteria(covering_criteria)
 
         self.chip.set_rule(rule)
 
@@ -59,6 +59,12 @@ class TestChip(unittest.TestCase):
         volume = self.chip._get_volume(stock_code, date_obj, days_period)
         self.assertEqual(volume, 15835525)
 
+    def test_get_closing_price(self):
+        stock_code = '0050'
+        date_obj = datetime.datetime.strptime('2017-09-01', "%Y-%m-%d")
+        closing_price = self.chip._get_closing_price(stock_code, date_obj)
+        self.assertEqual(closing_price, 83.00)
+
     def test_get_one_day_data(self):
         stock_code = '0050'
         date_obj = datetime.datetime.strptime('2017-09-01', "%Y-%m-%d")
@@ -68,7 +74,7 @@ class TestChip(unittest.TestCase):
         self.assertEqual(data['concentration_20days'], 2.05)
 
     def test_simulate_one(self):
-        stock_code = '1313'
-        date_obj = datetime.datetime.strptime('2017-06-01', "%Y-%m-%d")
+        stock_code = '2369'
+        date_obj = datetime.datetime.strptime('2017-09-01', "%Y-%m-%d")
         self._set_test_rule()
         data = self.chip.simulate_one(stock_code, date_obj)

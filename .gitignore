@@ -4,4 +4,5 @@ nvesto_crawler/raw_data/*
 nvesto_crawler/csv_data/*
 nvesto_crawler/cookie_string.txt
 nvesto_crawler/secret_token_site/input.js
+nvesto_crawler/src/log/crawl-error.log
 *.sw?
